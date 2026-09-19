@@ -1,0 +1,42 @@
+{
+  "layouts": [
+    "dev_asymmetric",
+    "dev_rooms",
+    "test_ring",
+    "test_corridors"
+  ],
+  "sha256": {
+    "dev_asymmetric\\combined.json": "53c2beeefae28f62cecad82d6e04a6ed18d0d2ae0cb46dd7d1a3ece324f44460",
+    "dev_asymmetric\\laser.json": "f89d09ea893cd012d64dd72405904182ae9b4102346999860dc881dd25f22c3a",
+    "dev_asymmetric\\map.pgm": "a9357532052cb005b6b981b795b8e9b2d1a545704e775e6e8d4a92af7befd9bf",
+    "dev_asymmetric\\map.yaml": "93c406e6c476163ac54dc74d16f520c3a886970ca3a7b918e9630d25f6f6e712",
+    "dev_asymmetric\\metadata.json": "bc18e47ce10acf6be7a33934f69a64abe67c410ffc55751b3be0ba38676fd2f8",
+    "dev_asymmetric\\normal.json": "2845e2686954eb02ff071393709f01909c1fb51fcd033ee3890ea40962c30367",
+    "dev_asymmetric\\visual.json": "3b30c18088196bb52ee53f51076078b91c12815f7eb814e4faf3f64eba3270ea",
+    "dev_asymmetric\\world.sdf": "548ee3ca07701fb18fcd8e10efab604e189776874d050d8e6574daec278a040b",
+    "dev_rooms\\combined.json": "f7c066c1dc9f5cfb53ce99889dd2451f0eb8042a3e5c9dd66beb1d8a48c675a5",
+    "dev_rooms\\laser.json": "9081d896341f37224c3b7a0357a22842f6e0aa917df8438657d14759ad85091d",
+    "dev_rooms\\map.pgm": "5db2831d7b5d8595448767c4c97d0e95b958a26d5bc89b40c96216bf252d9396",
+    "dev_rooms\\map.yaml": "712b30a0fd3e9aaa4f5e790aa60cf3f94a19491a2a428eac38be77fb18e2004f",
+    "dev_rooms\\metadata.json": "a2e1cdb71b41940fba71553d33467372120cce3cf2b1b21f1ccd33120f9fe9ca",
+    "dev_rooms\\normal.json": "2845e2686954eb02ff071393709f01909c1fb51fcd033ee3890ea40962c30367",
+    "dev_rooms\\visual.json": "acd304aa9d53da0b781d22292be41d519475fd4adfc01e1878695517334bbbfe",
+    "dev_rooms\\world.sdf": "9fa6f13019365a71e57611262052d85c08f28d3cacf32642212cf81e2f508003",
+    "test_corridors\\combined.json": "52a4c9b823f5b97043ef5cf0603a047a061aedb85e36062a281777a49e312600",
+    "test_corridors\\laser.json": "4f3f4a69dd0760c22935ecb18e6c7d4cdceff43062e4a827d1ff145630c3e156",
+    "test_corridors\\map.pgm": "1b816bd145a3c643e00e9ea8bc0c127f2a5b6377bda52bc6740454daa93babe9",
+    "test_corridors\\map.yaml": "51d52bb5c38da6898de72b5c12a319a5a17fe424b544773b440a3c90a8202812",
+    "test_corridors\\metadata.json": "1592efd4e2e56ddbcb7caa3ef3e4aaa5822fe848892605e4754ede19c01bdfd1",
+    "test_corridors\\normal.json": "2845e2686954eb02ff071393709f01909c1fb51fcd033ee3890ea40962c30367",
+    "test_corridors\\visual.json": "55205c5cd74dd5df6a4757a7a2a41da0869ed3ce78e6c9595ddc242878236817",
+    "test_corridors\\world.sdf": "59704a342b9e1f8705e5026644902167ecdffc901636528184f5ed0c5f6b7138",
+    "test_ring\\combined.json": "b2f92641424f0e60331d3b277d52c15c36674fc73ebfe255e8205ce68c7d2ab6",
+    "test_ring\\laser.json": "5ec0b15859afcf883011e1476c75efefa1a455d55164b0e5bd73af21de24bf6a",
+    "test_ring\\map.pgm": "d7e3b1bc6a0a7066a6a00bf0a3dc480be7fc0a0ffd4ce2113af901d738dc62d0",
+    "test_ring\\map.yaml": "b07840e684a9b989eafb02184d53859cc4296948309e39971528aa2a1ca47606",
+    "test_ring\\metadata.json": "a78074d3fd5a9c1be804f4c3b42a61834a491ae8abe7a346c7ddc2f351d8564b",
+    "test_ring\\normal.json": "2845e2686954eb02ff071393709f01909c1fb51fcd033ee3890ea40962c30367",
+    "test_ring\\visual.json": "d58231911a352ad3270b32cf9a6c361c196064e6d89a2f1a9f0f7916e74650df",
+    "test_ring\\world.sdf": "a5ed93d7f28862ce63e37ec22bf57b5fde7da3a7dd930b16faee3039f725b78e"
+  }
+}

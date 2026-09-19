@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>quality_nav2_layer</name>
+  <version>0.1.0</version>
+  <description>Conservative localization quality soft costs for Nav2 Humble.</description>
+  <maintainer email="sitp@example.invalid">SITP team</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>nav2_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

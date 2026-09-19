@@ -1,0 +1,88 @@
+%YAML:1.0
+---
+format_version: 1
+scene_mean: !!opencv-matrix
+   rows: 1
+   cols: 14
+   dt: d
+   data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+scene_std: !!opencv-matrix
+   rows: 1
+   cols: 14
+   dt: d
+   data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+scene_weight1: !!opencv-matrix
+   rows: 3
+   cols: 14
+   dt: d
+   data: [
+     0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
+     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0,
+     0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0 ]
+scene_bias1: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ 0, 0, 0 ]
+scene_weight2: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+scene_bias2: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ 0, 0, 0 ]
+scene_weight3: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+scene_bias3: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ 0, 0, 0 ]
+fusion_mean: !!opencv-matrix
+   rows: 1
+   cols: 10
+   dt: d
+   data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+fusion_std: !!opencv-matrix
+   rows: 1
+   cols: 10
+   dt: d
+   data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+fusion_weight1: !!opencv-matrix
+   rows: 2
+   cols: 10
+   dt: d
+   data: [
+     0.5, 0, 0, 0, 0, 2, 0, 0, 0, 0,
+     0, 0.5, 0, 0, 0, 0, 2, 0, 0, 0 ]
+fusion_bias1: !!opencv-matrix
+   rows: 2
+   cols: 1
+   dt: d
+   data: [ 0, 0 ]
+fusion_weight2: !!opencv-matrix
+   rows: 2
+   cols: 2
+   dt: d
+   data: [ 1, 0, 0, 1 ]
+fusion_bias2: !!opencv-matrix
+   rows: 2
+   cols: 1
+   dt: d
+   data: [ 0, 0 ]
+fusion_weight3: !!opencv-matrix
+   rows: 2
+   cols: 2
+   dt: d
+   data: [ 1, 0, 0, 1 ]
+fusion_bias3: !!opencv-matrix
+   rows: 2
+   cols: 1
+   dt: d
+   data: [ 0, 0 ]

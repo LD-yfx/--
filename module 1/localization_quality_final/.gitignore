@@ -1,0 +1,11 @@
+build/
+install/
+log/
+__pycache__/
+*.pyc
+quality_results_*.csv
+
+# The verified bag is about 3.2 GiB. Distribute it by hash-addressed download instead.
+my_dataset/
+data/formal_gazebo/
+data/formal_gazebo_rejected*/

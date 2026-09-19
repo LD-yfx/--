@@ -1,0 +1,12 @@
+{
+  "run_id": "corridor_dark_seed2",
+  "scene": "corridor",
+  "lighting": "dark",
+  "geometry_complexity": "high",
+  "fault": "laser_degraded",
+  "route": "route_c",
+  "speed_mps": 1.0,
+  "seed": 2,
+  "world": "corridor_dark_seed2/world.sdf",
+  "world_sha256": "50ef1e60600b0dc93bef94840bbfa476b6a6af2b68fbb000ef5c8079d5961744"
+}

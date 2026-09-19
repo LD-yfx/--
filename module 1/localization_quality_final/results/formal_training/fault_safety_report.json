@@ -1,0 +1,90 @@
+{
+  "acceptance_profile": "undergraduate_innovation_quality_module_v1",
+  "required_modes_present": true,
+  "results": [
+    {
+      "path": "localization_quality_final/results/formal_training/runtime_normal.csv",
+      "file_sha256": "4bae0cd73d0e651813a8f84a6152d66ef4e2d5d74e5735d85f6f2ce8ed2472f7",
+      "algorithm_sha256": "63047f9e433c3fcdb04ea9005987e680186caf4ac32e5ce2c626ed4ae9bca01a",
+      "mode": "normal",
+      "rows": 1329,
+      "metrics": {
+        "q_laser_raw": 0.7146090624529722,
+        "q_visual_raw": 0.29773118359668926,
+        "q_laser": 0.6344360052671182,
+        "q_visual": 0.754628690744921,
+        "q_fused": 0.7482779676448458,
+        "w_laser": 0.05756689616252822,
+        "w_visual": 0.9424331038374718,
+        "processing_ms": 1.2659683807373965,
+        "processing_ms_p95": 1.337264,
+        "expected_state_rate": 0.9977426636568849
+      },
+      "checks": {
+        "numeric_invariants": true,
+        "processing_p95_le_100_ms": true,
+        "mean_laser_quality_ge_0_60": true,
+        "mean_visual_quality_ge_0_60": true,
+        "normal_state_rate_ge_0_90": true
+      },
+      "passed": true
+    },
+    {
+      "path": "localization_quality_final/results/formal_training/runtime_laser_fail.csv",
+      "file_sha256": "535aae2c1168a76b4244b4c66a97bbcb681828f265f76da2e38608963656e82b",
+      "algorithm_sha256": "909eb14075540eba30919aed14bd887613eb11dd5182c795722eeca975042530",
+      "mode": "laser_fail",
+      "rows": 1329,
+      "metrics": {
+        "q_laser_raw": 0.09162328442437924,
+        "q_visual_raw": 0.29773118359668926,
+        "q_laser": 0.068843820165538,
+        "q_visual": 0.754628690744921,
+        "q_fused": 0.6859308344620014,
+        "w_laser": 0.10090293453724605,
+        "w_visual": 0.8990970654627539,
+        "processing_ms": 1.29831840331076,
+        "processing_ms_p95": 1.405745,
+        "expected_state_rate": 0.9977426636568849
+      },
+      "checks": {
+        "numeric_invariants": true,
+        "processing_p95_le_100_ms": true,
+        "failed_laser_quality_le_0_30": true,
+        "healthy_visual_quality_ge_0_60": true,
+        "healthy_visual_weight_ge_0_85": true,
+        "fault_detection_rate_ge_0_95": true
+      },
+      "passed": true
+    },
+    {
+      "path": "localization_quality_final/results/formal_training/runtime_visual_fail.csv",
+      "file_sha256": "22d4229a9442c50cf0ae0c42ff8eb5f33fd3e883efbfbf8bd13998253abdcaae",
+      "algorithm_sha256": "0283430d7489be2e5160f4abbf2fa71cde695f4ab251e2cbfbcf85049cedaae4",
+      "mode": "visual_fail",
+      "rows": 1329,
+      "metrics": {
+        "q_laser_raw": 0.7146090624529722,
+        "q_visual_raw": 0.0,
+        "q_laser": 0.6344360052671182,
+        "q_visual": 0.04109646576373213,
+        "q_fused": 0.5751020684725358,
+        "w_laser": 0.9,
+        "w_visual": 0.1,
+        "processing_ms": 2.2528322731376975,
+        "processing_ms_p95": 2.397382,
+        "expected_state_rate": 1
+      },
+      "checks": {
+        "numeric_invariants": true,
+        "processing_p95_le_100_ms": true,
+        "failed_visual_quality_le_0_30": true,
+        "healthy_laser_quality_ge_0_60": true,
+        "healthy_laser_weight_ge_0_85": true,
+        "fault_detection_rate_ge_0_95": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

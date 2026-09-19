@@ -1,0 +1,12 @@
+{
+  "run_id": "outdoor_normal_seed2",
+  "scene": "outdoor",
+  "lighting": "normal",
+  "geometry_complexity": "high",
+  "fault": "laser_degraded",
+  "route": "route_c",
+  "speed_mps": 1.0,
+  "seed": 2,
+  "world": "outdoor_normal_seed2/world.sdf",
+  "world_sha256": "34ed22a0282e2479e4a8b7f0fd3a3f2f56bea9679ab2514bfc5b587313bb1d1e"
+}

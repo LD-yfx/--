@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="corridor_dark_high_2">
+    <physics name="default_physics" type="ode">
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+    <scene>
+      <ambient>0.01 0.01 0.01 1</ambient>
+      <background>0.08 0.09 0.12 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 20 0 0 0</pose>
+      <diffuse>0.04 0.04 0.04 1.0</diffuse>
+      <specular>0.04 0.04 0.04 1.0</specular>
+      <direction>-0.5 0.2 -1</direction>
+    </light>
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision"><geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry></collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.35 0.35 0.35 1</ambient><diffuse>0.55 0.55 0.55 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_left">
+      <static>true</static>
+      <pose>0.0000 2.0000 1.5000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>40 0.2 3</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>40 0.2 3</size></box></geometry>
+          <material><ambient>0.65 0.65 0.65 1</ambient><diffuse>0.65 0.65 0.65 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_right">
+      <static>true</static>
+      <pose>0.0000 -2.0000 1.5000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>40 0.2 3</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>40 0.2 3</size></box></geometry>
+          <material><ambient>0.65 0.65 0.65 1</ambient><diffuse>0.65 0.65 0.65 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_end">
+      <static>true</static>
+      <pose>20.0000 0.0000 1.5000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.2 4 3</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.2 4 3</size></box></geometry>
+          <material><ambient>0.65 0.65 0.65 1</ambient><diffuse>0.65 0.65 0.65 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_start">
+      <static>true</static>
+      <pose>-20.0000 0.0000 1.5000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.2 4 3</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.2 4 3</size></box></geometry>
+          <material><ambient>0.65 0.65 0.65 1</ambient><diffuse>0.65 0.65 0.65 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_0">
+      <static>true</static>
+      <pose>-3.0928 -1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.7625584802922103 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.7625584802922103 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_1">
+      <static>true</static>
+      <pose>-8.7168 1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.5410326483176596 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.5410326483176596 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_2">
+      <static>true</static>
+      <pose>-5.0351 -1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.46368568303923163 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.46368568303923163 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_3">
+      <static>true</static>
+      <pose>-2.6082 1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.3339353027221676 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.3339353027221676 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_4">
+      <static>true</static>
+      <pose>5.2297 1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.712162608774886 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.712162608774886 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_5">
+      <static>true</static>
+      <pose>-10.4612 -1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.41380181571098845 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.41380181571098845 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_6">
+      <static>true</static>
+      <pose>10.7961 -1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.3852192973188375 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.3852192973188375 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_7">
+      <static>true</static>
+      <pose>-5.8636 1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.4027518634625664 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.4027518634625664 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_8">
+      <static>true</static>
+      <pose>13.7477 1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.3671544276403888 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.3671544276403888 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor_feature_9">
+      <static>true</static>
+      <pose>0.6526 -1.4500 0.7000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.6871890565169854 0.5 1.4</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.6871890565169854 0.5 1.4</size></box></geometry>
+          <material><ambient>0.35 0.45 0.75 1</ambient><diffuse>0.35 0.45 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

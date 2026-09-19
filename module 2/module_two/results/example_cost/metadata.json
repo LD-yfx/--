@@ -1,0 +1,29 @@
+{
+  "artifact_type": "localization_quality_soft_cost",
+  "source": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_grid/quality_grid.csv",
+  "spec": {
+    "width": 15,
+    "height": 27,
+    "resolution": 0.1,
+    "origin_x": -17.0,
+    "origin_y": -0.5,
+    "yaw": 0.0,
+    "frame": "odom"
+  },
+  "as_of_source_seconds": 89.142,
+  "mode": "full",
+  "parameters": {
+    "beta": 1.0,
+    "gamma": 1.0,
+    "sample_scale": 5.0,
+    "age_scale": 30.0,
+    "unknown_risk": 0.7,
+    "max_cost": 200,
+    "mean_only_floor": 0.7
+  },
+  "known_cells": 21,
+  "unknown_cells": 384,
+  "cost_min": 51,
+  "cost_max": 140,
+  "obstacle_map_included": false
+}

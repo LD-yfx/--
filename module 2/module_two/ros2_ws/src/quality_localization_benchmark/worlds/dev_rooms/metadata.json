@@ -1,0 +1,171 @@
+{
+  "map_id": "dev_rooms",
+  "split": "development",
+  "bounds": [
+    -7,
+    7,
+    -5,
+    5
+  ],
+  "start": [
+    -5.4,
+    -2.7,
+    0.0
+  ],
+  "goal": [
+    5.4,
+    2.7
+  ],
+  "calibration_waypoints": [
+    [
+      0.0,
+      4.25
+    ],
+    [
+      5.4,
+      2.7
+    ],
+    [
+      0.0,
+      4.25
+    ],
+    [
+      -5.4,
+      -2.7
+    ]
+  ],
+  "interior": [
+    [
+      -0.2,
+      0.2,
+      -3.7,
+      3.7
+    ],
+    [
+      -4.7,
+      -1.7,
+      -0.15,
+      0.15
+    ],
+    [
+      1.8,
+      4.7,
+      -0.15,
+      0.15
+    ],
+    [
+      -4.4,
+      -3.8,
+      2.0,
+      2.6
+    ],
+    [
+      3.7,
+      4.3,
+      -2.9,
+      -2.3
+    ]
+  ],
+  "degradation": [
+    -6.5,
+    6.5,
+    3.8,
+    4.7
+  ],
+  "rectangles": [
+    [
+      -7,
+      -6.8,
+      -5,
+      5
+    ],
+    [
+      6.8,
+      7,
+      -5,
+      5
+    ],
+    [
+      -7,
+      7,
+      -5,
+      -4.8
+    ],
+    [
+      -7,
+      7,
+      4.8,
+      5
+    ],
+    [
+      -0.2,
+      0.2,
+      -3.7,
+      3.7
+    ],
+    [
+      -4.7,
+      -1.7,
+      -0.15,
+      0.15
+    ],
+    [
+      1.8,
+      4.7,
+      -0.15,
+      0.15
+    ],
+    [
+      -4.4,
+      -3.8,
+      2.0,
+      2.6
+    ],
+    [
+      3.7,
+      4.3,
+      -2.9,
+      -2.3
+    ]
+  ],
+  "resolution": 0.1,
+  "width": 140,
+  "height": 100,
+  "quality_resolution": 0.2,
+  "quality_width": 70,
+  "quality_height": 50,
+  "origin": [
+    -7,
+    -5
+  ],
+  "world_to_map": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "robot_collision_radius": 0.31,
+  "mission_waypoints": [
+    [
+      5.4,
+      2.7
+    ],
+    [
+      -5.4,
+      -2.7
+    ]
+  ],
+  "reference_mission_length_m": 38.682842712474624,
+  "mission_time_limit_sec": 416.8284271247462,
+  "reference_path_parameters": {
+    "resolution": 0.1,
+    "robot_radius": 0.32,
+    "connectivity": 4,
+    "cell_clearance_margin_m": 0.07071067811865475,
+    "endpoint_connectors_included": true,
+    "continuous_shortest_path": false,
+    "reference_speed_mps": 0.4
+  },
+  "quality_values_preassigned": false,
+  "reference_calibration_length_m": 39.282842712474626,
+  "calibration_time_limit_sec": 422.8284271247462
+}

@@ -1,0 +1,147 @@
+{
+  "map_id": "dev_asymmetric",
+  "split": "development",
+  "bounds": [
+    -6,
+    6,
+    -4,
+    4
+  ],
+  "start": [
+    -4.6,
+    0.0,
+    0.0
+  ],
+  "goal": [
+    4.6,
+    0.0
+  ],
+  "calibration_waypoints": [
+    [
+      0.0,
+      -2.5
+    ],
+    [
+      4.6,
+      0.0
+    ],
+    [
+      0.0,
+      -2.5
+    ],
+    [
+      -4.6,
+      0.0
+    ]
+  ],
+  "interior": [
+    [
+      -1.5,
+      1.2,
+      -1.2,
+      1.5
+    ],
+    [
+      -3.6,
+      -3.1,
+      2.4,
+      2.9
+    ],
+    [
+      2.7,
+      3.2,
+      2.3,
+      2.8
+    ]
+  ],
+  "degradation": [
+    -3.9,
+    3.9,
+    -3.6,
+    -1.4
+  ],
+  "rectangles": [
+    [
+      -6,
+      -5.8,
+      -4,
+      4
+    ],
+    [
+      5.8,
+      6,
+      -4,
+      4
+    ],
+    [
+      -6,
+      6,
+      -4,
+      -3.8
+    ],
+    [
+      -6,
+      6,
+      3.8,
+      4
+    ],
+    [
+      -1.5,
+      1.2,
+      -1.2,
+      1.5
+    ],
+    [
+      -3.6,
+      -3.1,
+      2.4,
+      2.9
+    ],
+    [
+      2.7,
+      3.2,
+      2.3,
+      2.8
+    ]
+  ],
+  "resolution": 0.1,
+  "width": 120,
+  "height": 80,
+  "quality_resolution": 0.2,
+  "quality_width": 60,
+  "quality_height": 40,
+  "origin": [
+    -6,
+    -4
+  ],
+  "world_to_map": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "robot_collision_radius": 0.31,
+  "mission_waypoints": [
+    [
+      4.6,
+      0.0
+    ],
+    [
+      -4.6,
+      0.0
+    ]
+  ],
+  "reference_mission_length_m": 25.28284271247462,
+  "mission_time_limit_sec": 282.8284271247462,
+  "reference_path_parameters": {
+    "resolution": 0.1,
+    "robot_radius": 0.32,
+    "connectivity": 4,
+    "cell_clearance_margin_m": 0.07071067811865475,
+    "endpoint_connectors_included": true,
+    "continuous_shortest_path": false,
+    "reference_speed_mps": 0.4
+  },
+  "quality_values_preassigned": false,
+  "reference_calibration_length_m": 28.76568542494924,
+  "calibration_time_limit_sec": 317.65685424949237
+}

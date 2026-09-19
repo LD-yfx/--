@@ -1,0 +1,151 @@
+{
+  "map_id": "test_corridors",
+  "split": "test",
+  "bounds": [
+    -8,
+    8,
+    -5,
+    5
+  ],
+  "start": [
+    -6.3,
+    0.0,
+    0.0
+  ],
+  "goal": [
+    6.3,
+    0.0
+  ],
+  "interior": [
+    [
+      -4.6,
+      4.6,
+      -0.55,
+      0.55
+    ],
+    [
+      -4.6,
+      2.0,
+      2.55,
+      2.8
+    ],
+    [
+      -1.8,
+      4.6,
+      -2.8,
+      -2.55
+    ],
+    [
+      -5.5,
+      -5.0,
+      3.4,
+      3.9
+    ],
+    [
+      5.0,
+      5.5,
+      -3.9,
+      -3.4
+    ]
+  ],
+  "degradation": [
+    -4.7,
+    4.7,
+    -2.4,
+    -0.7
+  ],
+  "rectangles": [
+    [
+      -8,
+      -7.8,
+      -5,
+      5
+    ],
+    [
+      7.8,
+      8,
+      -5,
+      5
+    ],
+    [
+      -8,
+      8,
+      -5,
+      -4.8
+    ],
+    [
+      -8,
+      8,
+      4.8,
+      5
+    ],
+    [
+      -4.6,
+      4.6,
+      -0.55,
+      0.55
+    ],
+    [
+      -4.6,
+      2.0,
+      2.55,
+      2.8
+    ],
+    [
+      -1.8,
+      4.6,
+      -2.8,
+      -2.55
+    ],
+    [
+      -5.5,
+      -5.0,
+      3.4,
+      3.9
+    ],
+    [
+      5.0,
+      5.5,
+      -3.9,
+      -3.4
+    ]
+  ],
+  "resolution": 0.1,
+  "width": 160,
+  "height": 100,
+  "quality_resolution": 0.2,
+  "quality_width": 80,
+  "quality_height": 50,
+  "origin": [
+    -8,
+    -5
+  ],
+  "world_to_map": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "robot_collision_radius": 0.31,
+  "mission_waypoints": [
+    [
+      6.3,
+      0.0
+    ],
+    [
+      -6.3,
+      0.0
+    ]
+  ],
+  "reference_mission_length_m": 29.082842712474623,
+  "mission_time_limit_sec": 320.8284271247462,
+  "reference_path_parameters": {
+    "resolution": 0.1,
+    "robot_radius": 0.32,
+    "connectivity": 4,
+    "cell_clearance_margin_m": 0.07071067811865475,
+    "endpoint_connectors_included": true,
+    "continuous_shortest_path": false,
+    "reference_speed_mps": 0.4
+  },
+  "quality_values_preassigned": false
+}

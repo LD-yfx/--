@@ -1,0 +1,66 @@
+{
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+  ],
+  "scenarios": [
+    "dual_route",
+    "sparse_misleading_score",
+    "stale_high_score",
+    "high_variance",
+    "unobserved_direct_route",
+    "no_path"
+  ],
+  "modes": [
+    "geometric",
+    "linear",
+    "nonlinear",
+    "full",
+    "no_variance",
+    "no_count",
+    "no_age"
+  ],
+  "parameters": {
+    "beta": 1.0,
+    "gamma": 2.0,
+    "sample_scale": 5.0,
+    "age_scale": 30.0,
+    "unknown_risk": 0.7,
+    "max_cost": 200,
+    "mean_only_floor": 0.7
+  },
+  "weight": 3.0,
+  "radius_m": 0.35,
+  "resolution_m": 1.0,
+  "clock": "source_seconds",
+  "synthetic_as_of": 400.0,
+  "parameters_fitted": false,
+  "test_rows": 420,
+  "gamma_sensitivity": [
+    1,
+    2
+  ],
+  "gamma1_test_rows": 420,
+  "event_rows": 560,
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "numpy": "1.21.5",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "source_sha256": {
+    "experiments/run_experiments.py": "e86376e258dcbcd2cfeef17a21a688f95e8514292183cec1e53a5473c2a5a043",
+    "ros2_ws/src/quality_aware_navigation/quality_aware_navigation/cli.py": "6988bdc467896940be190f7793c3e751ef449f5d5d44e19949cc973976c903ba",
+    "ros2_ws/src/quality_aware_navigation/quality_aware_navigation/grid.py": "703642b4ea447a47d364c3470a4ef289cf8ec5d0c4e13c08466480105f4cb0f7",
+    "ros2_ws/src/quality_aware_navigation/quality_aware_navigation/model.py": "5d0f2004bc86e2c1f58ed7333ffa9e42855a985ec2e1f66bea69193fed026430",
+    "ros2_ws/src/quality_aware_navigation/quality_aware_navigation/planning.py": "820ad6f817d335fd81cc877834bac4fde7806952341f66080e6d1f2c9d4076f5",
+    "ros2_ws/src/quality_aware_navigation/quality_aware_navigation/ros_node.py": "cec6baa3ca083c69292c5304413af5fde09acc83991e9c8eca59bf5362d9688d",
+    "ros2_ws/src/quality_aware_navigation/quality_aware_navigation/__init__.py": "e22b697cf92c6a9a78f97c8380a6935d53e272059729c5af578959a9d2142c18"
+  },
+  "evidence_scope": "manually constructed mechanism experiments; no real localization error measured"
+}

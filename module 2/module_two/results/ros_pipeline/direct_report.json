@@ -1,0 +1,279 @@
+{
+  "artifact_type": "real_ros2_pipeline_interface_verification",
+  "scope": "Synthetic sensor/statistics inputs passed through actual installed ROS2 nodes.",
+  "does_not_measure": [
+    "real localization accuracy",
+    "navigation success",
+    "robot collision avoidance"
+  ],
+  "domain_id": 73,
+  "clock": "shared ROS system/source clock; no simulation clock mixing",
+  "module_one_pipeline_requested": false,
+  "checks": [
+    {
+      "name": "exact_fresh_bad_stale_uncertain_and_unknown_costs",
+      "passed": true,
+      "source_stamp": 1789807264.198495,
+      "costs": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140
+      ],
+      "oracle": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140
+      ]
+    },
+    {
+      "name": "reject_array_length_mismatch",
+      "passed": true,
+      "costs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "1",
+        "rejected": "1",
+        "last_error": "statistics arrays have different lengths",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789807264.198495",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability"
+      }
+    },
+    {
+      "name": "reject_duplicate_indices",
+      "passed": true,
+      "costs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "2",
+        "rejected": "2",
+        "last_error": "statistics indices are repeated or outside the grid",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789807265.1203163",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability"
+      }
+    },
+    {
+      "name": "reject_future_observation",
+      "passed": true,
+      "costs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "3",
+        "rejected": "3",
+        "last_error": "cell observations must not be later than their snapshot",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789807265.5067377",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability"
+      }
+    },
+    {
+      "name": "duplicate_source_timestamp_does_not_refresh",
+      "passed": true,
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "5",
+        "rejected": "4",
+        "last_error": "duplicate or out-of-order quality snapshot",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789807265.8161674",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability"
+      }
+    },
+    {
+      "name": "source_timeout_conservative_fallback",
+      "passed": true,
+      "costs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "elapsed_source_time": 1.2913975715637207,
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "6",
+        "rejected": "4",
+        "last_error": "",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789807266.001342",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability"
+      }
+    },
+    {
+      "name": "fresh_source_recovers_after_timeout",
+      "passed": true,
+      "costs": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140
+      ],
+      "oracle": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140
+      ]
+    },
+    {
+      "name": "geometry_change_replaces_dimensions_origin_and_rotation",
+      "passed": true,
+      "width": 5,
+      "height": 3,
+      "resolution": 0.25,
+      "origin": [
+        -2.0,
+        3.0,
+        1.5707963267948966
+      ],
+      "costs": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ]
+    },
+    {
+      "name": "empty_snapshot_clears_previous_known_cells",
+      "passed": true,
+      "costs": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ]
+    }
+  ],
+  "passed": true,
+  "processes": [
+    {
+      "name": "direct_cost",
+      "command": [
+        "ros2",
+        "run",
+        "quality_aware_navigation",
+        "quality_cost_node",
+        "--ros-args",
+        "-p",
+        "input_mode:=statistics",
+        "-p",
+        "publish_period:=0.1",
+        "-p",
+        "source_timeout:=1.0",
+        "-p",
+        "mode:=full",
+        "-p",
+        "beta:=1.0",
+        "-p",
+        "gamma:=1.0",
+        "-p",
+        "sample_scale:=5.0",
+        "-p",
+        "age_scale:=30.0",
+        "-p",
+        "unknown_risk:=0.7",
+        "-p",
+        "max_cost:=200",
+        "-p",
+        "stale_cost:=200",
+        "-p",
+        "statistics_topic:=/verification/direct_quality_stats",
+        "-p",
+        "output_topic:=/verification/direct_navigation_cost",
+        "-r",
+        "/quality_navigation/diagnostics:=/verification/direct_diagnostics"
+      ],
+      "log": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/results/ros_pipeline/direct_cost.log",
+      "returncode": 0,
+      "log_tail": "[WARN] [1789807265.100361370] [quality_cost_node]: Rejected quality snapshot: statistics arrays have different lengths\n[WARN] [1789807265.486339514] [quality_cost_node]: Rejected quality snapshot: statistics indices are repeated or outside the grid\n[WARN] [1789807265.713080680] [quality_cost_node]: Rejected quality snapshot: cell observations must not be later than their snapshot\n[WARN] [1789807265.968531520] [quality_cost_node]: Rejected quality snapshot: duplicate or out-of-order quality snapshot\n"
+    }
+  ],
+  "duration_seconds": 17.149779012999943
+}

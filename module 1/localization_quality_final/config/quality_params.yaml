@@ -1,0 +1,115 @@
+/**:
+  ros__parameters:
+    topics:
+      scan: /scan
+      point_cloud: /points
+      image: /camera/image_raw
+      compressed_image: /camera/image_raw/compressed
+      odom: /odom
+      visual_localization: /visual_localization/odom
+      laser_localization: /laser_localization/odom
+      metrics: /localization_quality/metrics
+      diagnostics: /localization_quality/diagnostics
+      quality_map: /localization_quality/quality_map
+
+    input:
+      image: raw                  # raw | compressed
+      laser: scan                 # scan | pointcloud2
+      odom_required: true
+
+    sync:
+      # Both offline and realtime use the newest sample at or before the laser
+      # timestamp. They never match a future frame.
+      tolerance_sec: 0.25
+      sensor_timeout_sec: 0.50
+      queue_depth: 50
+
+    qos:
+      # Real sensors often expose different DDS contracts. Configure each
+      # input independently instead of forcing one profile on every topic.
+      image:
+        reliability: best_effort  # best_effort | reliable
+        depth: 20
+        durability: volatile      # volatile | transient_local
+      laser:
+        reliability: best_effort
+        depth: 20
+        durability: volatile
+      odom:
+        reliability: best_effort
+        depth: 50
+        durability: volatile
+      localization:
+        reliability: reliable
+        depth: 50
+        durability: volatile
+
+    frames:
+      # The current real-machine smoke bag contains odom only. Set this to map
+      # when a map transform
+      # and map-coordinate pose source are available.
+      target: odom
+
+    map:
+      resolution: 0.05
+      width: 400
+      height: 400
+      origin_x: -10.0
+      origin_y: -10.0
+
+    run_mode: normal
+    fault_severity: 1.0
+    output_csv: ""
+
+    quality:
+      laser:
+        min_range_m: 0.10
+        max_range_m: 10.0
+        close_range_m: 0.50
+        occlusion_start_ratio: 0.70
+        occlusion_floor: 0.10
+        coverage_sectors: 12
+        coverage_weight: 0.20
+        entropy_weight: 0.15
+        geometry_weight: 0.25
+        abrupt_jump_m: 0.50
+      visual:
+        blur_bad: 10.0
+        blur_good: 180.0
+        brightness_bad_low: 25.0
+        brightness_ideal_low: 70.0
+        brightness_ideal_high: 185.0
+        brightness_bad_high: 235.0
+        contrast_bad: 8.0
+        contrast_good: 45.0
+        blur_weight: 0.50
+        brightness_weight: 0.30
+        contrast_weight: 0.20
+        exposure_weight: 0.15
+        edge_weight: 0.10
+        max_features: 500
+        min_features: 40
+        underexposed_threshold: 20.0
+        overexposed_threshold: 245.0
+        tracking_covariance_limit: 0.50
+
+    context:
+      scene_classifier_enabled: true
+
+    fusion:
+      failure_enter_threshold: 0.30
+      failure_recovery_threshold: 0.45
+      failed_sensor_weight: 0.10
+      quality_ema_alpha: 0.35
+      # If a Gazebo-only calibrator saturates low despite healthy image
+      # evidence and no explicit lost-tracking signal, use native scores and
+      # the rule fusion for that frame.
+      visual_calibration_domain_guard:
+        enabled: true
+        raw_min: 0.35
+        calibrated_max: 0.10
+      strategy: mlp
+      mlp_enabled: true
+      # Portable installed-package URI. Empty/missing/corrupt still triggers
+      # the explicit rule_fallback safety path.
+      model_path: "package://localization_quality/models/context_mlp_formal.yaml"

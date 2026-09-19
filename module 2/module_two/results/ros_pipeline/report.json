@@ -1,0 +1,433 @@
+{
+  "artifact_type": "real_ros2_pipeline_interface_verification",
+  "scope": "Synthetic sensor/statistics inputs passed through actual installed ROS2 nodes.",
+  "does_not_measure": [
+    "real localization accuracy",
+    "navigation success",
+    "Nav2 plugin loading or planner/controller behavior",
+    "robot collision avoidance"
+  ],
+  "domain_id": 73,
+  "clock": "shared ROS system/source clock; no simulation clock mixing",
+  "module_one_pipeline_requested": true,
+  "checks": [
+    {
+      "name": "synthetic_sensor_to_module_one_statistics_to_nav2_costmap",
+      "passed": true,
+      "known_cell": 36,
+      "sample_count": 12,
+      "mean": 0.9888367056846619,
+      "variance": 1.0913743864193748e-07,
+      "observed_at": 1789808197.4372473,
+      "source_stamp": 1789808197.4372473,
+      "mapped_cost": 16,
+      "unknown_cost": 140,
+      "legacy_quality": 99,
+      "statistics_mode": "windowed",
+      "note": "Synthetic images/scans/odometry test transport and score semantics; not localization accuracy."
+    },
+    {
+      "name": "exact_fresh_bad_stale_uncertain_and_unknown_costs",
+      "passed": true,
+      "source_stamp": 1789808215.2825682,
+      "costs": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140
+      ],
+      "oracle": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140
+      ]
+    },
+    {
+      "name": "reject_array_length_mismatch",
+      "passed": true,
+      "costs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "1",
+        "rejected": "1",
+        "last_error": "statistics arrays have different lengths",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789808215.2825682",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability",
+        "runtime_module_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/ros_node.py",
+        "runtime_module_sha256": "cec6baa3ca083c69292c5304413af5fde09acc83991e9c8eca59bf5362d9688d"
+      }
+    },
+    {
+      "name": "reject_duplicate_indices",
+      "passed": true,
+      "costs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "2",
+        "rejected": "2",
+        "last_error": "statistics indices are repeated or outside the grid",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789808215.8675652",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability",
+        "runtime_module_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/ros_node.py",
+        "runtime_module_sha256": "cec6baa3ca083c69292c5304413af5fde09acc83991e9c8eca59bf5362d9688d"
+      }
+    },
+    {
+      "name": "reject_future_observation",
+      "passed": true,
+      "costs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "3",
+        "rejected": "3",
+        "last_error": "cell observations must not be later than their snapshot",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789808216.113533",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability",
+        "runtime_module_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/ros_node.py",
+        "runtime_module_sha256": "cec6baa3ca083c69292c5304413af5fde09acc83991e9c8eca59bf5362d9688d"
+      }
+    },
+    {
+      "name": "duplicate_source_timestamp_does_not_refresh",
+      "passed": true,
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "5",
+        "rejected": "4",
+        "last_error": "duplicate or out-of-order quality snapshot",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789808216.6685488",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability",
+        "runtime_module_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/ros_node.py",
+        "runtime_module_sha256": "cec6baa3ca083c69292c5304413af5fde09acc83991e9c8eca59bf5362d9688d"
+      }
+    },
+    {
+      "name": "source_timeout_conservative_fallback",
+      "passed": true,
+      "costs": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "elapsed_source_time": 1.2808430194854736,
+      "diagnostic": {
+        "state": "source_stale_conservative_fallback",
+        "level": 1,
+        "accepted": "6",
+        "rejected": "4",
+        "last_error": "",
+        "model": "full",
+        "input_mode": "statistics",
+        "known_cells": "4",
+        "source_stamp": "1789808216.8836303",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability",
+        "runtime_module_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/ros_node.py",
+        "runtime_module_sha256": "cec6baa3ca083c69292c5304413af5fde09acc83991e9c8eca59bf5362d9688d"
+      }
+    },
+    {
+      "name": "fresh_source_recovers_after_timeout",
+      "passed": true,
+      "costs": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140
+      ],
+      "oracle": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140
+      ]
+    },
+    {
+      "name": "geometry_change_replaces_dimensions_origin_and_rotation",
+      "passed": true,
+      "width": 5,
+      "height": 3,
+      "resolution": 0.25,
+      "origin": [
+        -2.0,
+        3.0,
+        1.5707963267948966
+      ],
+      "costs": [
+        0,
+        200,
+        121,
+        102,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ]
+    },
+    {
+      "name": "empty_snapshot_clears_previous_known_cells",
+      "passed": true,
+      "costs": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ]
+    }
+  ],
+  "passed": true,
+  "provenance": {
+    "ros_distro": "humble",
+    "python_executable": "/usr/bin/python3",
+    "python_version": "3.10.12",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "package_prefix": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation",
+    "core_files": [
+      {
+        "module": "quality_aware_navigation.ros_node",
+        "loaded_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/ros_node.py",
+        "loaded_sha256": "cec6baa3ca083c69292c5304413af5fde09acc83991e9c8eca59bf5362d9688d",
+        "workspace_source_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/src/quality_aware_navigation/quality_aware_navigation/ros_node.py",
+        "workspace_source_sha256": "cec6baa3ca083c69292c5304413af5fde09acc83991e9c8eca59bf5362d9688d",
+        "installed_copies": [
+          {
+            "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/ros_node.py",
+            "sha256": "cec6baa3ca083c69292c5304413af5fde09acc83991e9c8eca59bf5362d9688d"
+          }
+        ],
+        "installed_source_loaded_match": true
+      },
+      {
+        "module": "quality_aware_navigation.model",
+        "loaded_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/model.py",
+        "loaded_sha256": "5d0f2004bc86e2c1f58ed7333ffa9e42855a985ec2e1f66bea69193fed026430",
+        "workspace_source_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/src/quality_aware_navigation/quality_aware_navigation/model.py",
+        "workspace_source_sha256": "5d0f2004bc86e2c1f58ed7333ffa9e42855a985ec2e1f66bea69193fed026430",
+        "installed_copies": [
+          {
+            "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/model.py",
+            "sha256": "5d0f2004bc86e2c1f58ed7333ffa9e42855a985ec2e1f66bea69193fed026430"
+          }
+        ],
+        "installed_source_loaded_match": true
+      },
+      {
+        "module": "quality_aware_navigation.grid",
+        "loaded_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/grid.py",
+        "loaded_sha256": "703642b4ea447a47d364c3470a4ef289cf8ec5d0c4e13c08466480105f4cb0f7",
+        "workspace_source_path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/src/quality_aware_navigation/quality_aware_navigation/grid.py",
+        "workspace_source_sha256": "703642b4ea447a47d364c3470a4ef289cf8ec5d0c4e13c08466480105f4cb0f7",
+        "installed_copies": [
+          {
+            "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/grid.py",
+            "sha256": "703642b4ea447a47d364c3470a4ef289cf8ec5d0c4e13c08466480105f4cb0f7"
+          }
+        ],
+        "installed_source_loaded_match": true
+      }
+    ],
+    "installed_source_loaded_match": true
+  },
+  "processes": [
+    {
+      "name": "pipeline_cost",
+      "command": [
+        "ros2",
+        "run",
+        "quality_aware_navigation",
+        "quality_cost_node",
+        "--ros-args",
+        "-p",
+        "input_mode:=statistics",
+        "-p",
+        "publish_period:=0.1",
+        "-p",
+        "source_timeout:=2.0",
+        "-p",
+        "mode:=full",
+        "-p",
+        "beta:=1.0",
+        "-p",
+        "gamma:=1.0",
+        "-p",
+        "sample_scale:=5.0",
+        "-p",
+        "age_scale:=30.0",
+        "-p",
+        "unknown_risk:=0.7",
+        "-p",
+        "max_cost:=200",
+        "-p",
+        "stale_cost:=200"
+      ],
+      "log": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/results/ros_pipeline/pipeline_cost.log",
+      "returncode": 0,
+      "log_tail": ""
+    },
+    {
+      "name": "realtime_evaluator",
+      "command": [
+        "ros2",
+        "run",
+        "localization_quality",
+        "realtime_evaluator",
+        "--ros-args",
+        "-p",
+        "frames.target:=map",
+        "-p",
+        "fusion.mlp_enabled:=false",
+        "-p",
+        "topics.scan:=/verification/scan",
+        "-p",
+        "topics.image:=/verification/image",
+        "-p",
+        "topics.odom:=/verification/odom",
+        "-p",
+        "map.width:=8",
+        "-p",
+        "map.height:=8",
+        "-p",
+        "map.resolution:=0.5",
+        "-p",
+        "map.origin_x:=-2.0",
+        "-p",
+        "map.origin_y:=-2.0",
+        "-p",
+        "map.publish_statistics:=true",
+        "-p",
+        "map.statistics_publish_period_sec:=0.1",
+        "-p",
+        "map.statistics_window_sec:=10.0",
+        "-p",
+        "sync.tolerance_sec:=0.25"
+      ],
+      "log": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/results/ros_pipeline/realtime_evaluator.log",
+      "returncode": 0,
+      "log_tail": "[INFO] [1789808192.231444631] [realtime_evaluator]: started: image=raw laser=scan sync=causal_past model=fallback map_frame=map\n[INFO] [1789808197.737100975] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n"
+    },
+    {
+      "name": "direct_cost",
+      "command": [
+        "ros2",
+        "run",
+        "quality_aware_navigation",
+        "quality_cost_node",
+        "--ros-args",
+        "-p",
+        "input_mode:=statistics",
+        "-p",
+        "publish_period:=0.1",
+        "-p",
+        "source_timeout:=1.0",
+        "-p",
+        "mode:=full",
+        "-p",
+        "beta:=1.0",
+        "-p",
+        "gamma:=1.0",
+        "-p",
+        "sample_scale:=5.0",
+        "-p",
+        "age_scale:=30.0",
+        "-p",
+        "unknown_risk:=0.7",
+        "-p",
+        "max_cost:=200",
+        "-p",
+        "stale_cost:=200",
+        "-p",
+        "statistics_topic:=/verification/direct_quality_stats",
+        "-p",
+        "output_topic:=/verification/direct_navigation_cost",
+        "-r",
+        "/quality_navigation/diagnostics:=/verification/direct_diagnostics"
+      ],
+      "log": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_two/results/ros_pipeline/direct_cost.log",
+      "returncode": 0,
+      "log_tail": "[WARN] [1789808215.859272425] [quality_cost_node]: Rejected quality snapshot: statistics arrays have different lengths\n[WARN] [1789808216.092468050] [quality_cost_node]: Rejected quality snapshot: statistics indices are repeated or outside the grid\n[WARN] [1789808216.546428796] [quality_cost_node]: Rejected quality snapshot: cell observations must not be later than their snapshot\n[WARN] [1789808216.862436308] [quality_cost_node]: Rejected quality snapshot: duplicate or out-of-order quality snapshot\n"
+    }
+  ],
+  "duration_seconds": 47.25203506199978
+}

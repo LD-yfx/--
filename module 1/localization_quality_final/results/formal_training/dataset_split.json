@@ -1,0 +1,45 @@
+{
+  "format_version": 1,
+  "method": "complete_run_stratified_60_20_20",
+  "seed": 20260727,
+  "counts": {
+    "train": 16,
+    "validation": 5,
+    "test": 6
+  },
+  "runs": {
+    "train": [
+      "corridor_dark_seed1",
+      "corridor_normal_seed0",
+      "corridor_normal_seed2",
+      "corridor_strong_seed1",
+      "corridor_strong_seed2",
+      "hall_dark_seed0",
+      "hall_dark_seed2",
+      "hall_normal_seed1",
+      "hall_normal_seed2",
+      "hall_strong_seed0",
+      "hall_strong_seed1",
+      "outdoor_dark_seed0",
+      "outdoor_dark_seed2",
+      "outdoor_normal_seed0",
+      "outdoor_strong_seed0",
+      "outdoor_strong_seed1"
+    ],
+    "validation": [
+      "corridor_dark_seed0",
+      "corridor_normal_seed1",
+      "hall_strong_seed2",
+      "outdoor_dark_seed1",
+      "outdoor_normal_seed2"
+    ],
+    "test": [
+      "corridor_dark_seed2",
+      "corridor_strong_seed0",
+      "hall_dark_seed1",
+      "hall_normal_seed0",
+      "outdoor_normal_seed1",
+      "outdoor_strong_seed2"
+    ]
+  }
+}

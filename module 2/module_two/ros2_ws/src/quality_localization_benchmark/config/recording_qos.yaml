@@ -1,0 +1,37 @@
+# Preserve critical observations while the recorder writes large image messages.
+# These publishers are verified RELIABLE in the running Gazebo/AMCL graph.
+/ground_truth/odom:
+  history: keep_last
+  depth: 4096
+  reliability: reliable
+  durability: volatile
+/odom:
+  history: keep_last
+  depth: 4096
+  reliability: reliable
+  durability: volatile
+/localization/estimated_odom:
+  history: keep_last
+  depth: 4096
+  reliability: reliable
+  durability: volatile
+/amcl_pose:
+  history: keep_last
+  depth: 512
+  reliability: reliable
+  durability: volatile
+/laser_localization/odom:
+  history: keep_last
+  depth: 512
+  reliability: reliable
+  durability: volatile
+/localization_quality/quality_stats:
+  history: keep_last
+  depth: 1024
+  reliability: reliable
+  durability: transient_local
+/clock:
+  history: keep_last
+  depth: 4096
+  reliability: best_effort
+  durability: volatile

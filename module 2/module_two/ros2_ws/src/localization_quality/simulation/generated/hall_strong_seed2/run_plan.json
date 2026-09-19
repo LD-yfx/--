@@ -1,0 +1,12 @@
+{
+  "run_id": "hall_strong_seed2",
+  "scene": "hall",
+  "lighting": "strong",
+  "geometry_complexity": "high",
+  "fault": "laser_degraded",
+  "route": "route_c",
+  "speed_mps": 1.0,
+  "seed": 2,
+  "world": "hall_strong_seed2/world.sdf",
+  "world_sha256": "6d1488b42d3f862b2df7faff301aa836299c3e9a605000e7ebe22165eb924c69"
+}

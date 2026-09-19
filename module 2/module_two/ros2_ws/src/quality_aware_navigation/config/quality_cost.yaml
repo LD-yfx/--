@@ -1,0 +1,16 @@
+quality_cost_node:
+  ros__parameters:
+    input_mode: statistics
+    statistics_topic: /localization_quality/quality_stats
+    output_topic: /localization_quality/navigation_cost
+    mode: full
+    beta: 1.0
+    gamma: 1.0
+    sample_scale: 5.0
+    age_scale: 30.0
+    unknown_risk: 0.7
+    max_cost: 200
+    mean_only_floor: 0.7
+    publish_period: 0.5
+    source_timeout: 2.0
+    stale_cost: 200

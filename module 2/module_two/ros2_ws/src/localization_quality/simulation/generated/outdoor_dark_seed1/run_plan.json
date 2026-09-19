@@ -1,0 +1,12 @@
+{
+  "run_id": "outdoor_dark_seed1",
+  "scene": "outdoor",
+  "lighting": "dark",
+  "geometry_complexity": "medium",
+  "fault": "visual_degraded",
+  "route": "route_b",
+  "speed_mps": 0.7,
+  "seed": 1,
+  "world": "outdoor_dark_seed1/world.sdf",
+  "world_sha256": "5a640fa9c514e93c5491c3e535813fb61b0bdf8986cc57cd44d7c67045057f34"
+}

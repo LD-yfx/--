@@ -1,0 +1,3 @@
+# Large rejected runs and recoverable process artifacts are stored outside the
+# formal experiment package.
+localization_quality_cold_archive/

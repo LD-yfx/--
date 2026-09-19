@@ -1,0 +1,12 @@
+{
+  "run_id": "outdoor_normal_seed0",
+  "scene": "outdoor",
+  "lighting": "normal",
+  "geometry_complexity": "low",
+  "fault": "normal",
+  "route": "route_a",
+  "speed_mps": 0.4,
+  "seed": 0,
+  "world": "outdoor_normal_seed0/world.sdf",
+  "world_sha256": "28400f0e5b630d636646efe242c8c61b56542b41caed725bc739d6ed0b2a98b5"
+}

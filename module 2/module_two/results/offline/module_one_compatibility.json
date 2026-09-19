@@ -1,0 +1,496 @@
+{
+  "status": "passed",
+  "root": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps",
+  "expected": 27,
+  "found": 27,
+  "passed": 27,
+  "files": [
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/corridor_dark_seed0/quality_grid.csv",
+      "csv_sha256": "18967ab2cd405e38ee0dd14383d27e9baba0b8fb52201655e2dab930b61bcfc2",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        27,
+        15
+      ],
+      "resolution": 0.1,
+      "known_cells": 21,
+      "known_fraction": 0.05185185185185185,
+      "as_of_source_seconds": 89.407,
+      "oldest_source_seconds": 0.43,
+      "cost_min": 31,
+      "cost_max": 140,
+      "metadata_sha256": "0e7291693de9e239c575a436171ff6c10f5e9aeb916a70e380900da548634fe9"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/corridor_dark_seed1/quality_grid.csv",
+      "csv_sha256": "430f48632ca763a83ed10347f9eb135f6911aa672a7e973abb52e7a8a6081a19",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        35,
+        107
+      ],
+      "resolution": 0.1,
+      "known_cells": 194,
+      "known_fraction": 0.05180240320427236,
+      "as_of_source_seconds": 89.081,
+      "oldest_source_seconds": 0.641,
+      "cost_min": 34,
+      "cost_max": 140,
+      "metadata_sha256": "7161cebb28869c2c8d6958f0fb3954629f429ea262f3ea266dc848ffcb75e79b"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/corridor_dark_seed2/quality_grid.csv",
+      "csv_sha256": "c70882689fe95bc6784c11e0a20fdcc0df41579ca5204762f197479ecaf95e7f",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        27,
+        17
+      ],
+      "resolution": 0.1,
+      "known_cells": 24,
+      "known_fraction": 0.05228758169934641,
+      "as_of_source_seconds": 89.327,
+      "oldest_source_seconds": 1.088,
+      "cost_min": 40,
+      "cost_max": 140,
+      "metadata_sha256": "dc326a478c37d21a999e3a6d17f493bd714e78874794c1453ba60e0fa467c14e"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/corridor_normal_seed0/quality_grid.csv",
+      "csv_sha256": "793893b448ba3163633a392c72635d8323dfe033212c1c8497de2f40cb77da6c",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        24,
+        14
+      ],
+      "resolution": 0.1,
+      "known_cells": 16,
+      "known_fraction": 0.047619047619047616,
+      "as_of_source_seconds": 89.339,
+      "oldest_source_seconds": 2.641,
+      "cost_min": 2,
+      "cost_max": 140,
+      "metadata_sha256": "700c092d619d3951c7b74a59d7ef907c404246555ea40cff5231d7ad35654c2f"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/corridor_normal_seed1/quality_grid.csv",
+      "csv_sha256": "150207962bc11580787968fb7e0506b7bcd18fbc8810e1ec907135963000b91a",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        34,
+        109
+      ],
+      "resolution": 0.1,
+      "known_cells": 195,
+      "known_fraction": 0.0526173772261198,
+      "as_of_source_seconds": 89.441,
+      "oldest_source_seconds": 0.733,
+      "cost_min": 33,
+      "cost_max": 140,
+      "metadata_sha256": "103e6bd53695050b1c57cebbb3a8c499b890ca9d618de3816503fdb828feb28f"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/corridor_normal_seed2/quality_grid.csv",
+      "csv_sha256": "ace2d930a733a269fc4785590b55add256d5665e4b37360bb37663684990fb76",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        24,
+        14
+      ],
+      "resolution": 0.1,
+      "known_cells": 18,
+      "known_fraction": 0.05357142857142857,
+      "as_of_source_seconds": 89.374,
+      "oldest_source_seconds": 2.81,
+      "cost_min": 6,
+      "cost_max": 140,
+      "metadata_sha256": "881d7c4978abf4a31424a62685122cb8b5a58866e69845d0f0c33e7c3b1bbff8"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/corridor_strong_seed0/quality_grid.csv",
+      "csv_sha256": "b61ea776bbcbd990ce4c8926e6c6fa011fe55428fbb3fd807ad9bc596f7f33a9",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        27,
+        15
+      ],
+      "resolution": 0.1,
+      "known_cells": 21,
+      "known_fraction": 0.05185185185185185,
+      "as_of_source_seconds": 89.142,
+      "oldest_source_seconds": 0.3,
+      "cost_min": 13,
+      "cost_max": 140,
+      "metadata_sha256": "5670932dad396dcc6b04e8dac02998011e46649939e53f9557e49deb596bae74"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/corridor_strong_seed1/quality_grid.csv",
+      "csv_sha256": "6c848734ed137744c1099640e32d4f2c33246524df6c32f214cc32bbd85a46b3",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        34,
+        109
+      ],
+      "resolution": 0.1,
+      "known_cells": 195,
+      "known_fraction": 0.0526173772261198,
+      "as_of_source_seconds": 89.307,
+      "oldest_source_seconds": 0.733,
+      "cost_min": 37,
+      "cost_max": 140,
+      "metadata_sha256": "fab675325708f587a188e0fc01df3f10928df5b7c83400a04ef6e0da9d51eae3"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/corridor_strong_seed2/quality_grid.csv",
+      "csv_sha256": "83ad97ff7813c068f4600d72491ab4e0e960d2e1674ccff9d7eecabf34c6f487",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        27,
+        17
+      ],
+      "resolution": 0.1,
+      "known_cells": 24,
+      "known_fraction": 0.05228758169934641,
+      "as_of_source_seconds": 89.441,
+      "oldest_source_seconds": 1.0,
+      "cost_min": 19,
+      "cost_max": 140,
+      "metadata_sha256": "9346c3d2ee2daa7b0fb9b1b5d1683ff0b4ccdc8c226ae50613d98f68d2df69fb"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/hall_dark_seed0/quality_grid.csv",
+      "csv_sha256": "12357d030a35012ce4a42c259e16c70f53e424b1ee944b1dfbb64d62d9424b92",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        211,
+        84
+      ],
+      "resolution": 0.1,
+      "known_cells": 270,
+      "known_fraction": 0.015233581584292485,
+      "as_of_source_seconds": 89.212,
+      "oldest_source_seconds": 0.303,
+      "cost_min": 64,
+      "cost_max": 140,
+      "metadata_sha256": "89e9ad910d2dbea678d6fc22ee410e59f6e25c2687fcc5180636410fbe4d37fa"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/hall_dark_seed1/quality_grid.csv",
+      "csv_sha256": "9b4b277f854fcdf2712abac6f20d1edab3b73c7959c92c16a490797cf9f2e2c5",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        16,
+        57
+      ],
+      "resolution": 0.1,
+      "known_cells": 53,
+      "known_fraction": 0.0581140350877193,
+      "as_of_source_seconds": 89.44,
+      "oldest_source_seconds": 0.33,
+      "cost_min": 27,
+      "cost_max": 140,
+      "metadata_sha256": "cdbabf01fed00e90cce299d6243ad2aba3c83e360f7342cde34d018d908693c6"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/hall_dark_seed2/quality_grid.csv",
+      "csv_sha256": "26c64f3892de27efd071a106b0f71d6cc95445edefbd51022b154f4a942d11aa",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        33,
+        57
+      ],
+      "resolution": 0.1,
+      "known_cells": 68,
+      "known_fraction": 0.03615098351940457,
+      "as_of_source_seconds": 89.337,
+      "oldest_source_seconds": 0.427,
+      "cost_min": 39,
+      "cost_max": 140,
+      "metadata_sha256": "c165fcd9dd97a5d1f3397603c34fcf415ad54dc696e3dbffc2802797886ea1a8"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/hall_normal_seed0/quality_grid.csv",
+      "csv_sha256": "7da50b7a1be53987656fb1583ce30275f5b72fe85919d9a8fa4c5e12c89f1412",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        213,
+        86
+      ],
+      "resolution": 0.1,
+      "known_cells": 267,
+      "known_fraction": 0.014575827055355388,
+      "as_of_source_seconds": 90.116,
+      "oldest_source_seconds": 1.006,
+      "cost_min": 46,
+      "cost_max": 140,
+      "metadata_sha256": "819996adfea6ec698528e09ea21444a4797bd43c4757bbf2550f9192b62e461a"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/hall_normal_seed1/quality_grid.csv",
+      "csv_sha256": "b7e1a2eabcb8814e5c254e3b309c7cd2348d8291a6eb4b40b95dd7b5a063c9b7",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        16,
+        57
+      ],
+      "resolution": 0.1,
+      "known_cells": 52,
+      "known_fraction": 0.05701754385964912,
+      "as_of_source_seconds": 89.134,
+      "oldest_source_seconds": 0.225,
+      "cost_min": 23,
+      "cost_max": 140,
+      "metadata_sha256": "62003dafbe97a1da6a0325f022d8a76ee5834d6eb1e55f274a94be10cbcaee63"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/hall_normal_seed2/quality_grid.csv",
+      "csv_sha256": "e4d40f9c1b384b9674d80528cfb8632b864c07c711fd1d1a526b8eb31a39b7b3",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        33,
+        57
+      ],
+      "resolution": 0.1,
+      "known_cells": 68,
+      "known_fraction": 0.03615098351940457,
+      "as_of_source_seconds": 90.116,
+      "oldest_source_seconds": 0.537,
+      "cost_min": 5,
+      "cost_max": 140,
+      "metadata_sha256": "d1a61cbc1d5b7cd087050d5e4b42f135f6f507621a754e727705ce4611c047c2"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/hall_strong_seed0/quality_grid.csv",
+      "csv_sha256": "ff6fdda46066a50fd2afad6266c0383a2fe885ae0e398cd36d9d51ed9020fab8",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        211,
+        84
+      ],
+      "resolution": 0.1,
+      "known_cells": 267,
+      "known_fraction": 0.015064319566689235,
+      "as_of_source_seconds": 89.375,
+      "oldest_source_seconds": 0.332,
+      "cost_min": 55,
+      "cost_max": 140,
+      "metadata_sha256": "eab9091c539c984c17919d6c0ccf1102218d8edaa0583b4f1ff643945e79f3bf"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/hall_strong_seed1/quality_grid.csv",
+      "csv_sha256": "7db880b593d5c8a68e10e02e3ff3751d1c04781605e0b3c914582a44abfc5ffc",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        16,
+        57
+      ],
+      "resolution": 0.1,
+      "known_cells": 53,
+      "known_fraction": 0.0581140350877193,
+      "as_of_source_seconds": 89.148,
+      "oldest_source_seconds": 0.44,
+      "cost_min": 27,
+      "cost_max": 140,
+      "metadata_sha256": "63f4959dd09ed71786f9e55ceaa808cb91877f2efbefcb6bf8df30ea7bdb918d"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/hall_strong_seed2/quality_grid.csv",
+      "csv_sha256": "77df1ff286884c5d0fbc5a235353324cd2f9c7b7331f7adc4741d192f9890188",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        33,
+        57
+      ],
+      "resolution": 0.1,
+      "known_cells": 68,
+      "known_fraction": 0.03615098351940457,
+      "as_of_source_seconds": 89.397,
+      "oldest_source_seconds": 0.421,
+      "cost_min": 17,
+      "cost_max": 140,
+      "metadata_sha256": "297503197cb0219c353214fe604c30bf61c277eafc387b2b1f0f28f0b7a6bf53"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/outdoor_dark_seed0/quality_grid.csv",
+      "csv_sha256": "a34a8196565a67725ee527fe7294a16a717cec971da107bf8d2885b617550764",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        218,
+        69
+      ],
+      "resolution": 0.1,
+      "known_cells": 259,
+      "known_fraction": 0.017218454992687142,
+      "as_of_source_seconds": 89.151,
+      "oldest_source_seconds": 0.309,
+      "cost_min": 47,
+      "cost_max": 140,
+      "metadata_sha256": "273b65dc7f7b096c5b3dd7db2318b5bae791ec23580216c7f79e69930155a742"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/outdoor_dark_seed1/quality_grid.csv",
+      "csv_sha256": "612c5fb182dca9905c40bb05374c82cb46da77095f598346aaa5b3dd991d28ce",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        16,
+        58
+      ],
+      "resolution": 0.1,
+      "known_cells": 54,
+      "known_fraction": 0.05818965517241379,
+      "as_of_source_seconds": 89.149,
+      "oldest_source_seconds": 0.441,
+      "cost_min": 18,
+      "cost_max": 140,
+      "metadata_sha256": "5372fb773f6a9c816462f58a0a3b71a404a962222aeac41626646e5566919114"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/outdoor_dark_seed2/quality_grid.csv",
+      "csv_sha256": "395d730ed0c09fd685ab05bf313711bf521f86bd4edd1380308e7ea866c4bc9d",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        68,
+        78
+      ],
+      "resolution": 0.1,
+      "known_cells": 173,
+      "known_fraction": 0.03261689291101056,
+      "as_of_source_seconds": 90.116,
+      "oldest_source_seconds": 1.006,
+      "cost_min": 38,
+      "cost_max": 140,
+      "metadata_sha256": "88c3c34db2511e3023c6afb34491c873a67fd00dd3ad62336bd8263b73281444"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/outdoor_normal_seed0/quality_grid.csv",
+      "csv_sha256": "fead420e84b29352a0a85c41136c079500b1dec8dbeb898c30c8e7a6274e84da",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        221,
+        71
+      ],
+      "resolution": 0.1,
+      "known_cells": 264,
+      "known_fraction": 0.016824931489388822,
+      "as_of_source_seconds": 90.116,
+      "oldest_source_seconds": 1.006,
+      "cost_min": 34,
+      "cost_max": 140,
+      "metadata_sha256": "2128261db3c3e017ebbbe9b585ff764a3b806a8b02cadc994a84f618837e3f9f"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/outdoor_normal_seed1/quality_grid.csv",
+      "csv_sha256": "487b23a4541ae9d235e21763780258ba996879e70d3c5afc82a78c9bc8db3eed",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        16,
+        58
+      ],
+      "resolution": 0.1,
+      "known_cells": 51,
+      "known_fraction": 0.05495689655172414,
+      "as_of_source_seconds": 89.373,
+      "oldest_source_seconds": 0.799,
+      "cost_min": 20,
+      "cost_max": 140,
+      "metadata_sha256": "ace5e77cc4abd9c7208875bb8d649c238e2dad49ed27fb5fe407030371a7e546"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/outdoor_normal_seed2/quality_grid.csv",
+      "csv_sha256": "db5057d8d27909fddf3e2602133fdb6344af53058fcd1008548efc8004518a2e",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        100,
+        87
+      ],
+      "resolution": 0.1,
+      "known_cells": 278,
+      "known_fraction": 0.03195402298850575,
+      "as_of_source_seconds": 89.149,
+      "oldest_source_seconds": 0.441,
+      "cost_min": 32,
+      "cost_max": 140,
+      "metadata_sha256": "c55c97def33e90a2f4b56feb85a3a95eeeb24e25a898e36f998db5a305cc4a8e"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/outdoor_strong_seed0/quality_grid.csv",
+      "csv_sha256": "4b8e3476960f7b9fefa1c18cf2cc742609c886ffb3a9475a9429563cc9dbb7a7",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        218,
+        69
+      ],
+      "resolution": 0.1,
+      "known_cells": 259,
+      "known_fraction": 0.017218454992687142,
+      "as_of_source_seconds": 89.145,
+      "oldest_source_seconds": 0.303,
+      "cost_min": 41,
+      "cost_max": 140,
+      "metadata_sha256": "8791c77db5b608481ed35ad1332b33ca3954a3626500cbd10ff157316e944899"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/outdoor_strong_seed1/quality_grid.csv",
+      "csv_sha256": "beda2b2728b77c98b488a9bbf962e829c449ff0cb3d22b65dbd0a4313d3f1e15",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        16,
+        58
+      ],
+      "resolution": 0.1,
+      "known_cells": 54,
+      "known_fraction": 0.05818965517241379,
+      "as_of_source_seconds": 89.404,
+      "oldest_source_seconds": 0.629,
+      "cost_min": 21,
+      "cost_max": 140,
+      "metadata_sha256": "a7b7d2963b6bc63692514fcc0dc59cddcd07e4a25d8282d367be42323ccff45e"
+    },
+    {
+      "path": "/mnt/c/Users/flx66/Documents/ChatGPT/sitp/module_one_reference/localization_quality_final/results/formal_training/quality_maps/outdoor_strong_seed2/quality_grid.csv",
+      "csv_sha256": "bc93b93d74bd249090687c0ad0afa15246845b992199faab8411a18adabe62c6",
+      "status": "passed",
+      "frame": "odom",
+      "shape": [
+        100,
+        87
+      ],
+      "resolution": 0.1,
+      "known_cells": 271,
+      "known_fraction": 0.03114942528735632,
+      "as_of_source_seconds": 89.441,
+      "oldest_source_seconds": 1.202,
+      "cost_min": 52,
+      "cost_max": 140,
+      "metadata_sha256": "6ca39ccec43b09306645839d23b3ce4432a1dc8682ecf2c346950bfa948e19fa"
+    }
+  ],
+  "limitation": "Import/cost compatibility only. These trajectory quality grids contain no obstacle map; no navigation or localization improvement is inferred."
+}

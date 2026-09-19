@@ -1,0 +1,12 @@
+{
+  "run_id": "corridor_dark_seed0",
+  "scene": "corridor",
+  "lighting": "dark",
+  "geometry_complexity": "low",
+  "fault": "normal",
+  "route": "route_a",
+  "speed_mps": 0.4,
+  "seed": 0,
+  "world": "corridor_dark_seed0/world.sdf",
+  "world_sha256": "bde1a441d2a90399973747968d6c9274128e098e28a4c1bacf248baa221bff97"
+}

@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "run_id": "independent_closed_loop_smoke_02",
+  "phase": "smoke",
+  "map_id": "dev_asymmetric",
+  "seed": 0,
+  "condition": "normal",
+  "method": "geometric",
+  "estimator": "AMCL laser localization",
+  "seed_scope": "Gazebo --seed and sensor timestamp-indexed noise; AMCL random seed not exposed by stock Humble",
+  "initial_pose": [
+    -4.3999999999999995,
+    0.1,
+    0.05
+  ],
+  "initial_sigma_xy": 0.3,
+  "initial_sigma_yaw": 0.15,
+  "spawn_pose": [
+    -4.6,
+    0.0,
+    0.0
+  ],
+  "frame_transform": {
+    "x": 0.0,
+    "y": 0.0,
+    "yaw": 0.0
+  },
+  "planned_waypoints": [
+    [
+      4.6,
+      0.0
+    ],
+    [
+      -4.6,
+      0.0
+    ]
+  ],
+  "mission_time_limit_sec": 282.8284271247462,
+  "mission_wall_time_limit_sec": 1131.3137084989849,
+  "collision_definition": "conservative circular footprint intersects exact SDF static rectangles",
+  "metadata": {
+    "map_id": "dev_asymmetric",
+    "split": "development",
+    "bounds": [
+      -6,
+      6,
+      -4,
+      4
+    ],
+    "start": [
+      -4.6,
+      0.0,
+      0.0
+    ],
+    "goal": [
+      4.6,
+      0.0
+    ],
+    "calibration_waypoints": [
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        4.6,
+        0.0
+      ],
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        -4.6,
+        0.0
+      ]
+    ],
+    "interior": [
+      [
+        -1.5,
+        1.2,
+        -1.2,
+        1.5
+      ],
+      [
+        -3.6,
+        -3.1,
+        2.4,
+        2.9
+      ],
+      [
+        2.7,
+        3.2,
+        2.3,
+        2.8
+      ]
+    ],
+    "degradation": [
+      -3.9,
+      3.9,
+      -3.6,
+      -1.4
+    ],
+    "rectangles": [
+      [
+        -6,
+        -5.8,
+        -4,
+        4
+      ],
+      [
+        5.8,
+        6,
+        -4,
+        4
+      ],
+      [
+        -6,
+        6,
+        -4,
+        -3.8
+      ],
+      [
+        -6,
+        6,
+        3.8,
+        4
+      ],
+      [
+        -1.5,
+        1.2,
+        -1.2,
+        1.5
+      ],
+      [
+        -3.6,
+        -3.1,
+        2.4,
+        2.9
+      ],
+      [
+        2.7,
+        3.2,
+        2.3,
+        2.8
+      ]
+    ],
+    "resolution": 0.1,
+    "width": 120,
+    "height": 80,
+    "quality_resolution": 0.2,
+    "quality_width": 60,
+    "quality_height": 40,
+    "origin": [
+      -6,
+      -4
+    ],
+    "world_to_map": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "robot_collision_radius": 0.31,
+    "mission_waypoints": [
+      [
+        4.6,
+        0.0
+      ],
+      [
+        -4.6,
+        0.0
+      ]
+    ],
+    "reference_mission_length_m": 25.28284271247462,
+    "mission_time_limit_sec": 282.8284271247462,
+    "reference_path_parameters": {
+      "resolution": 0.1,
+      "robot_radius": 0.32,
+      "connectivity": 4,
+      "cell_clearance_margin_m": 0.07071067811865475,
+      "endpoint_connectors_included": true,
+      "continuous_shortest_path": false,
+      "reference_speed_mps": 0.4
+    },
+    "quality_values_preassigned": false,
+    "reference_calibration_length_m": 28.76568542494924,
+    "calibration_time_limit_sec": 317.65685424949237
+  },
+  "arguments": {
+    "map_id": "dev_asymmetric",
+    "condition": "normal",
+    "method": "geometric",
+    "phase": "smoke",
+    "seed": 0,
+    "output": "/home/flx666/sitp_quality_research_01a0b893/runner_smoke_02",
+    "run_id": "independent_closed_loop_smoke_02",
+    "ros_domain": 78,
+    "gazebo_port": 11378,
+    "startup_timeout": 180.0,
+    "sim_timeout": null,
+    "wall_timeout": null,
+    "one_way": false,
+    "no_bag": false
+  },
+  "created_utc": "2026-09-19T10:27:29Z",
+  "software_environment": {
+    "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "cpu_count": 8,
+    "ros_distro": "humble",
+    "packages": [
+      "gazebo=11.10.2+dfsg-1",
+      "ros-humble-cv-bridge=3.2.1-1jammy.20260907.220118",
+      "ros-humble-nav2-amcl=1.1.20-1jammy.20260908.000809",
+      "ros-humble-navigation2=1.1.20-1jammy.20260908.015443"
+    ],
+    "package_query_returncode": 0
+  },
+  "provenance": {
+    "runner": {
+      "runtime_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_localization_benchmark/lib/python3.10/site-packages/quality_localization_benchmark/runner.py",
+      "runtime_sha256": "7eb56f7a1f245be95876113191aed571057d87f8c4944eaf1f20e45ff02af22a",
+      "source_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/src/quality_localization_benchmark/quality_localization_benchmark/runner.py",
+      "source_sha256": "7eb56f7a1f245be95876113191aed571057d87f8c4944eaf1f20e45ff02af22a",
+      "installed": true,
+      "source_matches_runtime": true
+    },
+    "evaluation": {
+      "runtime_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_localization_benchmark/lib/python3.10/site-packages/quality_localization_benchmark/evaluation.py",
+      "runtime_sha256": "82a803d3b6e0cd98bdd100d37e9d9b364f53c3ad0cf0fb5deb6c5e1f8aff0ca5",
+      "source_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/src/quality_localization_benchmark/quality_localization_benchmark/evaluation.py",
+      "source_sha256": "82a803d3b6e0cd98bdd100d37e9d9b364f53c3ad0cf0fb5deb6c5e1f8aff0ca5",
+      "installed": true,
+      "source_matches_runtime": true
+    },
+    "quality_coverage": {
+      "runtime_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_localization_benchmark/lib/python3.10/site-packages/quality_localization_benchmark/quality_coverage.py",
+      "runtime_sha256": "113cf5553b6ac72d2e52caaf8bd28f48bcdfaa72b4c3ca33cde063d7d3628637",
+      "source_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/src/quality_localization_benchmark/quality_localization_benchmark/quality_coverage.py",
+      "source_sha256": "113cf5553b6ac72d2e52caaf8bd28f48bcdfaa72b4c3ca33cde063d7d3628637",
+      "installed": true,
+      "source_matches_runtime": true
+    },
+    "adapter": {
+      "runtime_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_localization_benchmark/lib/python3.10/site-packages/quality_localization_benchmark/localization_adapter.py",
+      "runtime_sha256": "20d93a931b525dab51ea7eca8a093d02b134a13e64aebe642610960d1da498f6",
+      "source_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/src/quality_localization_benchmark/quality_localization_benchmark/localization_adapter.py",
+      "source_sha256": "20d93a931b525dab51ea7eca8a093d02b134a13e64aebe642610960d1da498f6",
+      "installed": true,
+      "source_matches_runtime": true
+    },
+    "sensor_bridge": {
+      "runtime_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_localization_benchmark/lib/python3.10/site-packages/quality_localization_benchmark/sensor_bridge.py",
+      "runtime_sha256": "8b3b061a2b06c0dc1cd49344f9d73e289ecc3fda6d4ced6a5e4af6752f0fa71b",
+      "source_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/src/quality_localization_benchmark/quality_localization_benchmark/sensor_bridge.py",
+      "source_sha256": "8b3b061a2b06c0dc1cd49344f9d73e289ecc3fda6d4ced6a5e4af6752f0fa71b",
+      "installed": true,
+      "source_matches_runtime": true
+    },
+    "cost_model": {
+      "runtime_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/model.py",
+      "runtime_sha256": "5d0f2004bc86e2c1f58ed7333ffa9e42855a985ec2e1f66bea69193fed026430",
+      "source_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/src/quality_aware_navigation/quality_aware_navigation/model.py",
+      "source_sha256": "5d0f2004bc86e2c1f58ed7333ffa9e42855a985ec2e1f66bea69193fed026430",
+      "installed": true,
+      "source_matches_runtime": true
+    },
+    "cost_node": {
+      "runtime_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/ros_node.py",
+      "runtime_sha256": "9905d2c9f5793f5b473c01b7737adbcfdcb26d01df392e23742f30d6ec3db15f",
+      "source_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/src/quality_aware_navigation/quality_aware_navigation/ros_node.py",
+      "source_sha256": "9905d2c9f5793f5b473c01b7737adbcfdcb26d01df392e23742f30d6ec3db15f",
+      "installed": true,
+      "source_matches_runtime": true
+    },
+    "localization_quality_source": {
+      "config/quality_params.yaml": "753b2ac5ccde8e24b7e4a6a2f663587d04fdce90dab5509599c67b0b1f550bbd",
+      "include/localization_quality/causal_sync.hpp": "a34924f54c2f0ff9bab404cbe8f90bb6b44d52c139e093828c818d35090bfe55",
+      "include/localization_quality/quality_core.hpp": "66b3c3fffa3be332e2e55b2ceaa7b73b5b9858508e505a25f785602786cbe39c",
+      "include/localization_quality/quality_statistics.hpp": "bba50b339a5ec0f99ef921b5524a17bb922c813b3c76d34f4bb7ada6c78e29d7",
+      "include/localization_quality/ros_parameters.hpp": "1b1cf53fe344d400110b5e809803960df2b718292f97f62141af5b4f9448a3e9",
+      "launch/real_machine.launch.py": "b3364cc15257cd63767e10cc0c5e8bc680aa6a83825843e942cdc94fd107f058",
+      "models/bootstrap_context_mlp.yaml": "30fc4d856fac9bfe6098f05a9edd1f7eba7ac90e35ab23b454c776e1b3202857",
+      "models/context_mlp_formal.yaml": "44b2df270c9e19aa4ea2045eb5fb41b7c5bc1fafb9cffc9fa27ecaab485603be",
+      "package.xml": "73c69282679bb13dcc0c4576c0d3e80e15a5af64b72d07228170b85950ad484c",
+      "scripts/build_training_dataset.py": "a714188229f46187e282cbbe2e87be09bde93077f77505c0331a4b814917c0b7",
+      "scripts/collect_sim_dataset.py": "e1a8ab20227d99748075a661553300eee486928dc4b3fb1b6dede9cd9065bd35",
+      "scripts/compare_offline_realtime.py": "218657d3a908cc8e63df32050d6329dfb9b6f58f2d203ab3fd348ba097ccd37d",
+      "scripts/create_hash_manifest.py": "e85bb70c068d34d9c3f8cd1bd0e1925179633da95e6449135a33c4458df4bf04",
+      "scripts/evaluate_ablations.py": "fc999ee7ea7ebaea9a0f5795bb4e343cf7edda38289987277b4c90621b8bd865",
+      "scripts/extract_training_rows.py": "11430082da1dcbddb1cf042bef5a05ed47fbb07d4af5457df3e8d23547ff2b16",
+      "scripts/generate_bootstrap_training_data.py": "d52d05c4b8d15408fe114c363bfa809aac7ce39cee50684ccfc4316ecc5b981a",
+      "scripts/generate_formal_quality_maps.py": "2450dc0278c2639aa51b997a101a49a468ed9254fc20f70dddb9f8fdf1dcd834",
+      "scripts/generate_quality_grid.py": "f84782373ff15e2dc3fcb8d3e563d572c0f04f1377a94e57ce4349e53155c267",
+      "scripts/generate_quality_map.py": "e25f5c8c4b599beb50a346142fd494e2ac93b8320b8bc0d7862a5381c0554eec",
+      "scripts/generate_sim_worlds.py": "1874d207c7b08fedff6091f1afe02a745c497ca4d12c22816dee73f2585f46ea",
+      "scripts/prepare_dataset.py": "bcc21bd222802ae92a804f5582a714587a7c8f2826236679dc0750d5c3782310",
+      "scripts/simulation_localization_proxy.py": "5409747af43da82dd41a69153b5d80cbe7912ddacce79bffff5b4755ce5e22ff",
+      "scripts/simulation_route_driver.py": "f72595b949e4075639255f6d7120db5a03e4e4ee2e9c914cc856e08290581673",
+      "scripts/simulation_sensor_pipeline.py": "7cc7cfde431ff03af95e4f8d2976620289aa93fc22ddf274efdde78dc36cf122",
+      "scripts/summarize_formal_dataset.py": "b811dd719aa276e4c5a45857005a9b11deb301f93e312b07a06db60178913584",
+      "scripts/summarize_real_bag_smoke.py": "cfa1900d6fad4ce716f06cdf9a2d8caefb6a2dc9d0760ab5b973d3e49d544331",
+      "scripts/train_context_mlp.py": "4da4aa39ddc97ba5ce45ee8fd28581bb5fb0331047e4964e918bcdaf2da81248",
+      "scripts/validate_module_one.py": "7bb33673498e90104926e569c6af090482e047b9e0fa4e9cfa1508ea370533ec",
+      "scripts/validate_quality_map_collection.py": "cce8dc2dada70f918fdd100578628d0f1c69bf6f21dd4fb243cd03274e616fef",
+      "scripts/validate_results.py": "da0837410f1d94f51ff865cb23a3201c50acd71578387b4706f59ab302bfc26c",
+      "simulation/launch/simulation.launch.py": "004d72d79020226a150d1e903df0558ee05ba238ecdd19e9fffb85276a39199b",
+      "src/offline_evaluator.cpp": "f479f7d43a8bc0bcf6c3ac32631d64e53cc513bd7febbeb12957ba83fda5c93c",
+      "src/quality_advanced.cpp": "f3edf58951ed816d790db2ff0fddefc0957fbd631a48e824defcc001238f1348",
+      "src/quality_core.cpp": "74d6d42c21642a0a47d978ed6dccca65156e5c6aefe19ffd9356cbb7221a6067",
+      "src/realtime_evaluator.cpp": "c57d957cd9bf25cfb091c82fce55e8222ab77a8d85513b2107bc57a997505f9c",
+      "test/data/test_context_mlp.yaml": "9d8c59065eb0f7b8627d79954c3aeb5fe8bb8626217a5078054524688eaf6bd4",
+      "test/test_advanced.cpp": "a9321ac51279710d4ef344db7d752139b7f0c686944c49931c6c4a694e7eacb7",
+      "test/test_causal_sync.cpp": "16fb2eef036d4fdf6b78592feedbf271e124ac13fb4ddc6fb1c9a4f3aa10b72f",
+      "test/test_python_pipeline.py": "f34fc5d10f0895f015079cfc3f68d5e815c69567f114d412c695c0ac3e670a3c",
+      "test/test_quality_core.cpp": "493875670ffae645b82d330d199ab77a27e4662c1e2aa5cc5e473d93ea1882a9",
+      "test/test_quality_statistics.cpp": "6c69d13913b9f6abde563f249fb8d63187222686c19616d472164f1bd7aa4be0"
+    },
+    "localization_quality_installed": {
+      "include/localization_quality/causal_sync.hpp": "a34924f54c2f0ff9bab404cbe8f90bb6b44d52c139e093828c818d35090bfe55",
+      "include/localization_quality/quality_core.hpp": "66b3c3fffa3be332e2e55b2ceaa7b73b5b9858508e505a25f785602786cbe39c",
+      "include/localization_quality/quality_statistics.hpp": "bba50b339a5ec0f99ef921b5524a17bb922c813b3c76d34f4bb7ada6c78e29d7",
+      "include/localization_quality/ros_parameters.hpp": "1b1cf53fe344d400110b5e809803960df2b718292f97f62141af5b4f9448a3e9",
+      "lib/localization_quality/build_training_dataset.py": "a714188229f46187e282cbbe2e87be09bde93077f77505c0331a4b814917c0b7",
+      "lib/localization_quality/collect_sim_dataset.py": "e1a8ab20227d99748075a661553300eee486928dc4b3fb1b6dede9cd9065bd35",
+      "lib/localization_quality/compare_offline_realtime.py": "218657d3a908cc8e63df32050d6329dfb9b6f58f2d203ab3fd348ba097ccd37d",
+      "lib/localization_quality/create_hash_manifest.py": "e85bb70c068d34d9c3f8cd1bd0e1925179633da95e6449135a33c4458df4bf04",
+      "lib/localization_quality/evaluate_ablations.py": "fc999ee7ea7ebaea9a0f5795bb4e343cf7edda38289987277b4c90621b8bd865",
+      "lib/localization_quality/extract_training_rows.py": "11430082da1dcbddb1cf042bef5a05ed47fbb07d4af5457df3e8d23547ff2b16",
+      "lib/localization_quality/generate_bootstrap_training_data.py": "d52d05c4b8d15408fe114c363bfa809aac7ce39cee50684ccfc4316ecc5b981a",
+      "lib/localization_quality/generate_formal_quality_maps.py": "2450dc0278c2639aa51b997a101a49a468ed9254fc20f70dddb9f8fdf1dcd834",
+      "lib/localization_quality/generate_quality_grid.py": "f84782373ff15e2dc3fcb8d3e563d572c0f04f1377a94e57ce4349e53155c267",
+      "lib/localization_quality/generate_quality_map.py": "e25f5c8c4b599beb50a346142fd494e2ac93b8320b8bc0d7862a5381c0554eec",
+      "lib/localization_quality/generate_sim_worlds.py": "1874d207c7b08fedff6091f1afe02a745c497ca4d12c22816dee73f2585f46ea",
+      "lib/localization_quality/prepare_dataset.py": "bcc21bd222802ae92a804f5582a714587a7c8f2826236679dc0750d5c3782310",
+      "lib/localization_quality/simulation_localization_proxy.py": "5409747af43da82dd41a69153b5d80cbe7912ddacce79bffff5b4755ce5e22ff",
+      "lib/localization_quality/simulation_route_driver.py": "f72595b949e4075639255f6d7120db5a03e4e4ee2e9c914cc856e08290581673",
+      "lib/localization_quality/simulation_sensor_pipeline.py": "7cc7cfde431ff03af95e4f8d2976620289aa93fc22ddf274efdde78dc36cf122",
+      "lib/localization_quality/summarize_formal_dataset.py": "b811dd719aa276e4c5a45857005a9b11deb301f93e312b07a06db60178913584",
+      "lib/localization_quality/summarize_real_bag_smoke.py": "cfa1900d6fad4ce716f06cdf9a2d8caefb6a2dc9d0760ab5b973d3e49d544331",
+      "lib/localization_quality/train_context_mlp.py": "4da4aa39ddc97ba5ce45ee8fd28581bb5fb0331047e4964e918bcdaf2da81248",
+      "lib/localization_quality/validate_module_one.py": "7bb33673498e90104926e569c6af090482e047b9e0fa4e9cfa1508ea370533ec",
+      "lib/localization_quality/validate_quality_map_collection.py": "cce8dc2dada70f918fdd100578628d0f1c69bf6f21dd4fb243cd03274e616fef",
+      "lib/localization_quality/validate_results.py": "da0837410f1d94f51ff865cb23a3201c50acd71578387b4706f59ab302bfc26c",
+      "share/localization_quality/config/quality_params.yaml": "753b2ac5ccde8e24b7e4a6a2f663587d04fdce90dab5509599c67b0b1f550bbd",
+      "share/localization_quality/launch/real_machine.launch.py": "b3364cc15257cd63767e10cc0c5e8bc680aa6a83825843e942cdc94fd107f058",
+      "share/localization_quality/launch/simulation.launch.py": "004d72d79020226a150d1e903df0558ee05ba238ecdd19e9fffb85276a39199b",
+      "share/localization_quality/models/bootstrap_context_mlp.yaml": "30fc4d856fac9bfe6098f05a9edd1f7eba7ac90e35ab23b454c776e1b3202857",
+      "share/localization_quality/models/context_mlp_formal.yaml": "44b2df270c9e19aa4ea2045eb5fb41b7c5bc1fafb9cffc9fa27ecaab485603be",
+      "share/localization_quality/package.xml": "73c69282679bb13dcc0c4576c0d3e80e15a5af64b72d07228170b85950ad484c"
+    },
+    "quality_nav2_layer_source": {
+      "include/quality_nav2_layer/cost_semantics.hpp": "34f7f03a303c5a64d5a9916668f7a3895110349a9e44bd5859fb8b77a6ec26a3",
+      "include/quality_nav2_layer/quality_cost_layer.hpp": "e2049f697e7d7258fd73923bd70c1511a3f1075000c20e9790f66c5d7288dcf7",
+      "package.xml": "ebf2b2fd4ac8b920e04c189abddf74851e0a81c6cadcb975a8353005f1394efb",
+      "quality_layer_plugins.xml": "7829c9916c01d8a7ab435cea4fe5593534fb95e15aee1c096b9d65b1996b08c3",
+      "src/quality_cost_layer.cpp": "e35e3ddbcd7529b7442984e182abd355d2bfb35831aa71277802106eb1cb526e",
+      "test/test_cost_semantics.cpp": "06dadd6842d4c1cdf3ad353116f330c245875feeb349f4e8c527da3706155278"
+    },
+    "quality_nav2_layer_installed": {
+      "include/quality_nav2_layer/cost_semantics.hpp": "34f7f03a303c5a64d5a9916668f7a3895110349a9e44bd5859fb8b77a6ec26a3",
+      "include/quality_nav2_layer/quality_cost_layer.hpp": "e2049f697e7d7258fd73923bd70c1511a3f1075000c20e9790f66c5d7288dcf7",
+      "lib/libquality_nav2_layer.so": "55035b5ecd72ec7ff3f19108ee782c7302d3252560aa486e217cfe43ef9e57ad",
+      "share/quality_nav2_layer/package.xml": "ebf2b2fd4ac8b920e04c189abddf74851e0a81c6cadcb975a8353005f1394efb",
+      "share/quality_nav2_layer/quality_layer_plugins.xml": "7829c9916c01d8a7ab435cea4fe5593534fb95e15aee1c096b9d65b1996b08c3"
+    },
+    "quality_localization_audit_source": {
+      "package.xml": "1bd9c42fcc43a7b59703d4f33ea766cf0e5d0aa761ab1c873e326a27d854e28f",
+      "src/tf_authority_audit.cpp": "2c040294513b46894b8f673938e8e6c64b4bf37dd56b04a74ee278f6d4489f4a"
+    },
+    "quality_localization_audit_installed": {
+      "share/quality_localization_audit/package.xml": "1bd9c42fcc43a7b59703d4f33ea766cf0e5d0aa761ab1c873e326a27d854e28f"
+    },
+    "module_one_executable": {
+      "path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/localization_quality/lib/localization_quality/realtime_evaluator",
+      "sha256": "26af6d622839a52d1328c1deb91fc06711ef973a3380def0b4a9baa2a7591fb3"
+    },
+    "tf_audit_executable": {
+      "path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_localization_audit/lib/quality_localization_audit/tf_authority_audit",
+      "sha256": "b1b29947103b9d3e1efdf7c9e69ef610c680bf2d92247ea08e1ef4efe4a45c0c"
+    }
+  },
+  "inputs_sha256": {
+    "worlds/dev_asymmetric/world.sdf": "548ee3ca07701fb18fcd8e10efab604e189776874d050d8e6574daec278a040b",
+    "worlds/dev_asymmetric/map.pgm": "a9357532052cb005b6b981b795b8e9b2d1a545704e775e6e8d4a92af7befd9bf",
+    "worlds/dev_asymmetric/map.yaml": "93c406e6c476163ac54dc74d16f520c3a886970ca3a7b918e9630d25f6f6e712",
+    "worlds/dev_asymmetric/metadata.json": "bc18e47ce10acf6be7a33934f69a64abe67c410ffc55751b3be0ba38676fd2f8",
+    "worlds/dev_asymmetric/normal.json": "2845e2686954eb02ff071393709f01909c1fb51fcd033ee3890ea40962c30367",
+    "robot/research_robot.urdf.xacro": "e7aba4feaa889e3bcbd89817c13db8150bd232319ea105c07b80b460a6ff475a",
+    "config/nav2_localization.yaml": "aca2eca6fc7c536d0c802b7a9ed95986f8972cee05c2d2b04dab4f58d547394e",
+    "launch/benchmark.launch.py": "2ee735d33aebbb382d51c217111a5e574ae9b92536161c0fa1678a6938b5aad7",
+    "config/recording_qos.yaml": "945ed9b52efb00c76e208962e338dde33038dd4e481a7597a20e586b061a79c6"
+  }
+}

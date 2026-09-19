@@ -1,0 +1,12 @@
+{
+  "run_id": "corridor_normal_seed1",
+  "scene": "corridor",
+  "lighting": "normal",
+  "geometry_complexity": "medium",
+  "fault": "visual_degraded",
+  "route": "route_b",
+  "speed_mps": 0.7,
+  "seed": 1,
+  "world": "corridor_normal_seed1/world.sdf",
+  "world_sha256": "96f5d757b802ab645f8aafca350414056ded25aafdd57948e531831395a16c44"
+}

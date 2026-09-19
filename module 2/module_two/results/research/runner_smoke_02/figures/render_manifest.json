@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "run_id": "independent_closed_loop_smoke_02",
+  "source_trial": "/home/flx666/sitp_quality_research_01a0b893/runner_smoke_02",
+  "input_files": {
+    "manifest.json": {
+      "exists": true,
+      "sha256": "ab4c177455da161077b553a66d999dc1e4baee06e4368a66aaeaeb89f5e2ff25"
+    },
+    "result.json": {
+      "exists": true,
+      "sha256": "6590cb3f90074c56ae44533f829a4de08ef9297dc5e4b8ce3f93cbf9d1b9c30d"
+    },
+    "estimates.jsonl": {
+      "exists": true,
+      "sha256": "209d33e00c91aa83006b1c3b6af30f1b0fc5530841a5d424531cf69845784890"
+    },
+    "truth.jsonl": {
+      "exists": true,
+      "sha256": "6add328f93a1186e121f3131dc5ec5a422e4a2537b6d95eea454116bd0f62060"
+    },
+    "quality_pairs.jsonl": {
+      "exists": true,
+      "sha256": "1272d085ac54970e80ea485820893d66eed6b9076fe08d34416179aa620c2c00"
+    },
+    "error_rows.jsonl": {
+      "exists": true,
+      "sha256": "7817935681b6ed6e5ba48e8d14cc296ba2c91221003523011721803dc81b7cb2"
+    },
+    "plans.jsonl": {
+      "exists": true,
+      "sha256": "84133ab07cab29a4f3f73732c9319c8d3eb7ae7b7a1f539ce0f2ce8862c16bd2"
+    }
+  },
+  "settings": {
+    "max_gap_seconds": 0.1,
+    "max_step_m": 0.5,
+    "quality_gap_seconds": 0.5,
+    "plan_stride": 20
+  },
+  "renderer_sha256": "822db2277d6b05902ddfe560fa0b90fae3d84e5382981ab3fe296428fa18cd7d",
+  "frame_transform": {
+    "x": 0.0,
+    "y": 0.0,
+    "yaw": 0.0
+  },
+  "window": [
+    3.7600000000000002,
+    69.46000000000001
+  ],
+  "window_source": "recorded_action_envelope",
+  "error_source": "error_rows.jsonl",
+  "recorded_result": {
+    "completed": true,
+    "valid_evidence": true,
+    "pose_metrics_valid": true,
+    "navigation_success": true,
+    "success": true
+  },
+  "row_counts": {
+    "estimates": 3550,
+    "truth": 3577,
+    "quality_pairs": 961,
+    "error_rows": 3300,
+    "plans": 122
+  },
+  "trajectory_segments": {
+    "truth": 1,
+    "estimates": 1
+  },
+  "notes": [
+    "No trajectory fitting or estimated truth. Coordinates use the fixed manifest transform.",
+    "No line crosses a time reversal/reset, invalid row, temporal gap or excessive adjacent spatial step.",
+    "Availability marks timestamp support, not localization correctness. Quality support uses its declared display tolerance."
+  ],
+  "missing_intervals": {
+    "truth": [],
+    "estimate": [],
+    "paired error": [],
+    "q_visual": [
+      [
+        24.056,
+        24.186
+      ]
+    ],
+    "q_laser": [
+      [
+        24.056,
+        24.186
+      ]
+    ],
+    "q_fused": [
+      [
+        24.056,
+        24.186
+      ]
+    ]
+  },
+  "plans_displayed_segments": 7
+}

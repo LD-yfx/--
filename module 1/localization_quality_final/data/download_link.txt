@@ -1,0 +1,24 @@
+数据集下载说明
+
+【百度网盘】
+链接：https://pan.baidu.com/s/1necfAAdfuGHO75UUgyGNxg?pwd=rtme
+提取码：rtme
+
+【当前已核验的数据】
+- 下载文件名：my_dataset.zip
+- 解压目录：my_dataset/
+  - metadata.yaml
+  - my_dataset_0.db3
+- db3 解压后大小：3,403,112,448 字节（约 3.2 GiB）
+- db3 SHA-256：186ec266cb63874c2f827cc6ade86d126f3e962afb8632cb3e07cd03e10d29c4
+
+【使用】
+1. 下载、解压，并用 config/dataset_description.md 中的 SHA-256 校验版本。
+2. 把 bag 文件夹路径传给离线评估器，而不是传入单个 .db3 文件。
+3. 正确的 ROS2 包名是 localization_quality：
+
+   ros2 run localization_quality offline_evaluator /bag目录 normal normal_results.csv --ros-args --params-file /参数文件/quality_params.yaml
+
+该bag只用于真机接口/时延烟测，不是三场景正式训练数据。复跑结论见
+results/real_machine_smoke/report.json；真机在线运行请使用
+real_machine.launch.py，默认禁用Gazebo模型。

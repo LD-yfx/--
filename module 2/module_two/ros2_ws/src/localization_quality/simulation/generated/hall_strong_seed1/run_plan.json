@@ -1,0 +1,12 @@
+{
+  "run_id": "hall_strong_seed1",
+  "scene": "hall",
+  "lighting": "strong",
+  "geometry_complexity": "medium",
+  "fault": "visual_degraded",
+  "route": "route_b",
+  "speed_mps": 0.7,
+  "seed": 1,
+  "world": "hall_strong_seed1/world.sdf",
+  "world_sha256": "284c6e88fcf796a33f6fdd7b1f5e78c63cf9f60eae2a637bdcce747e6bef1f82"
+}

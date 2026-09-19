@@ -1,0 +1,31 @@
+{
+  "format_version": 1,
+  "formal_run_id": "corridor_strong_seed0",
+  "installed_package_uri_model_loaded": true,
+  "pointcloud2": {
+    "input_type": "sensor_msgs/msg/PointCloud2",
+    "expected_frames": 445,
+    "output_rows": 445,
+    "output_completeness": 1.0,
+    "mlp_rows": 445,
+    "passed": true
+  },
+  "spatial_pose_optional_mode": {
+    "odom_mode": "optional",
+    "output_scope": "sensor_quality",
+    "expected_frames": 1329,
+    "output_rows": 1329,
+    "output_completeness": 1.0,
+    "non_spatial_output_rows": 1329,
+    "passed": true
+  },
+  "compressed_image": {
+    "coverage": "gtest_jpeg_payload_validation",
+    "passed": true
+  },
+  "qos_and_bounded_queue": {
+    "coverage": "runtime_parameter_validation_and_causal_queue_gtest",
+    "passed": true
+  },
+  "passed": true
+}

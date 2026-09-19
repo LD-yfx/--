@@ -1,0 +1,192 @@
+{
+  "format_version": 1,
+  "passed": true,
+  "checks": [
+    {
+      "name": "formal_dataset_source",
+      "passed": true,
+      "actual": "formal",
+      "target": "formal"
+    },
+    {
+      "name": "scene_macro_f1",
+      "passed": true,
+      "actual": 0.892725399042457,
+      "target": ">=0.85"
+    },
+    {
+      "name": "q_visual_error_correlation",
+      "passed": true,
+      "actual": 0.9278784136329877,
+      "target": ">=0.60"
+    },
+    {
+      "name": "q_laser_error_correlation",
+      "passed": true,
+      "actual": 0.8254713903244344,
+      "target": ">=0.60"
+    },
+    {
+      "name": "failure_auroc",
+      "passed": true,
+      "actual": 0.980880809614154,
+      "target": ">=0.85"
+    },
+    {
+      "name": "weight_mae",
+      "passed": true,
+      "actual": 0.08413677463858735,
+      "target": "<=0.10"
+    },
+    {
+      "name": "improvement_over_rule",
+      "passed": true,
+      "actual": 0.4983095479112916,
+      "target": ">=0.10"
+    },
+    {
+      "name": "rule_baseline_uses_raw_scores",
+      "passed": true,
+      "actual": [
+        "q_visual_raw",
+        "q_laser_raw"
+      ],
+      "target": [
+        "q_visual_raw",
+        "q_laser_raw"
+      ]
+    },
+    {
+      "name": "quality_weight_invariants",
+      "passed": true,
+      "actual": 0,
+      "target": "0 errors"
+    },
+    {
+      "name": "causal_sync_future_matches",
+      "passed": true,
+      "actual": 0,
+      "target": "0"
+    },
+    {
+      "name": "latency_p95_ms",
+      "passed": true,
+      "actual": 1.3371716,
+      "target": "<=100"
+    },
+    {
+      "name": "output_completeness",
+      "passed": true,
+      "actual": 1.0,
+      "target": ">=0.95"
+    },
+    {
+      "name": "model_artifact_sha256",
+      "passed": true,
+      "actual": "44b2df270c9e19aa4ea2045eb5fb41b7c5bc1fafb9cffc9fa27ecaab485603be",
+      "target": "44b2df270c9e19aa4ea2045eb5fb41b7c5bc1fafb9cffc9fa27ecaab485603be"
+    },
+    {
+      "name": "dataset_artifact_sha256:training_rows.csv",
+      "passed": true,
+      "actual": "68d112b84bfe4d9716538bbf8c9f2146fd9f1836dd959fd701115227235c9594",
+      "target": "68d112b84bfe4d9716538bbf8c9f2146fd9f1836dd959fd701115227235c9594"
+    },
+    {
+      "name": "split_artifact_sha256:dataset_split.json",
+      "passed": true,
+      "actual": "4ce35e376b82aba1b33dcb13dc74e351ebefae9bcd025bfb98fe9716d4cbffad",
+      "target": "4ce35e376b82aba1b33dcb13dc74e351ebefae9bcd025bfb98fe9716d4cbffad"
+    },
+    {
+      "name": "ablation_matrix",
+      "passed": true,
+      "actual": [
+        "fixed_0_5",
+        "full_context_mlp",
+        "lighting_geometry_context",
+        "quality_ratio_rule",
+        "scene_geometry_context",
+        "scene_lighting_context",
+        "sensor_quality_mlp"
+      ],
+      "target": [
+        "fixed_0_5",
+        "full_context_mlp",
+        "lighting_geometry_context",
+        "quality_ratio_rule",
+        "scene_geometry_context",
+        "scene_lighting_context",
+        "sensor_quality_mlp"
+      ]
+    },
+    {
+      "name": "quality_map_artifact_type",
+      "passed": true,
+      "actual": "formal_quality_map_collection",
+      "target": "formal_quality_map_collection"
+    },
+    {
+      "name": "quality_map_collection",
+      "passed": true,
+      "actual": true,
+      "target": true
+    },
+    {
+      "name": "quality_map_run_count",
+      "passed": true,
+      "actual": 27,
+      "target": 27
+    },
+    {
+      "name": "quality_map_output_completeness",
+      "passed": true,
+      "actual": 1.0,
+      "target": ">=0.95"
+    },
+    {
+      "name": "quality_map_spatial_completeness",
+      "passed": true,
+      "actual": 0.9987455396966993,
+      "target": ">=0.95"
+    },
+    {
+      "name": "quality_map_model_sha256",
+      "passed": true,
+      "actual": "44b2df270c9e19aa4ea2045eb5fb41b7c5bc1fafb9cffc9fa27ecaab485603be",
+      "target": "44b2df270c9e19aa4ea2045eb5fb41b7c5bc1fafb9cffc9fa27ecaab485603be"
+    }
+  ],
+  "runtime": {
+    "rows": 1329,
+    "invariant_errors": 0,
+    "processing_p95_ms": 1.3371716,
+    "latency_p95_ms": 1.3371716,
+    "future_matches": 0
+  },
+  "quality_maps": {
+    "run_count": 27,
+    "expected_frames": 35872,
+    "output_rows": 35872,
+    "output_completeness": 1.0,
+    "spatial_samples": 35827,
+    "spatial_completeness": 0.9987455396966993,
+    "known_cells": 3537,
+    "coverage_area_m2": 35.370000000000005,
+    "mean_cell_confidence": 0.6145699457441398,
+    "quality_cell_ratios": {
+      "low_0_0_4": 0.0002827254735651682,
+      "medium_0_4_0_7": 0.45038167938931295,
+      "high_0_7_1_0": 0.5493355951371218
+    },
+    "quality": {
+      "mean": 0.7021604623049655,
+      "stddev": 0.10858053990684335,
+      "min": 0.164114,
+      "p05": 0.552937,
+      "p50": 0.699975,
+      "p95": 0.9002399999999999,
+      "max": 0.911832
+    }
+  }
+}

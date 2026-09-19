@@ -1,0 +1,249 @@
+<?xml version="1.0"?><sdf version="1.6"><world name="test_corridors">
+      <physics name="ode" type="ode"><max_step_size>0.002</max_step_size><real_time_update_rate>500</real_time_update_rate></physics>
+      <scene><ambient>0.5 0.5 0.5 1</ambient><background>0.2 0.2 0.2 1</background><shadows>false</shadows></scene>
+      <light name="sun" type="directional"><pose>0 0 10 0 0 0</pose><diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular><direction>0.1 0.2 -1</direction><cast_shadows>false</cast_shadows></light>
+      <model name="ground"><static>true</static><pose>0 0 -.05 0 0 0</pose><link name="ground">
+      <collision name="ground"><geometry><box><size>20 14 .1</size></box></geometry></collision>
+      <visual name="ground"><geometry><box><size>20 14 .1</size></box></geometry>
+      <material><ambient>0.55 0.55 0.55 1</ambient><diffuse>0.55 0.55 0.55 1</diffuse></material></visual></link></model>
+      <model name="wall_0"><static>true</static>
+      <pose>-7.9 0.0 0.9 0 0 0</pose><link name="body">
+      <collision name="collision"><geometry><box><size>0.20000000000000018 10 1.8</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>0.20000000000000018 10 1.8</size></box></geometry>
+      <material><ambient>0.3 0.5 0.7 1</ambient><diffuse>0.3 0.5 0.7 1</diffuse></material></visual>
+      </link></model><model name="wall_1"><static>true</static>
+      <pose>7.9 0.0 0.9 0 0 0</pose><link name="body">
+      <collision name="collision"><geometry><box><size>0.20000000000000018 10 1.8</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>0.20000000000000018 10 1.8</size></box></geometry>
+      <material><ambient>0.65 0.60 0.5 1</ambient><diffuse>0.65 0.60 0.5 1</diffuse></material></visual>
+      </link></model><model name="wall_2"><static>true</static>
+      <pose>0.0 -4.9 0.9 0 0 0</pose><link name="body">
+      <collision name="collision"><geometry><box><size>16 0.20000000000000018 1.8</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>16 0.20000000000000018 1.8</size></box></geometry>
+      <material><ambient>0.65 0.60 0.5 1</ambient><diffuse>0.65 0.60 0.5 1</diffuse></material></visual>
+      </link></model><model name="wall_3"><static>true</static>
+      <pose>0.0 4.9 0.9 0 0 0</pose><link name="body">
+      <collision name="collision"><geometry><box><size>16 0.20000000000000018 1.8</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>16 0.20000000000000018 1.8</size></box></geometry>
+      <material><ambient>0.3 0.5 0.7 1</ambient><diffuse>0.3 0.5 0.7 1</diffuse></material></visual>
+      </link></model><model name="wall_4"><static>true</static>
+      <pose>0.0 0.0 0.9 0 0 0</pose><link name="body">
+      <collision name="collision"><geometry><box><size>9.2 1.1 1.8</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>9.2 1.1 1.8</size></box></geometry>
+      <material><ambient>0.65 0.60 0.5 1</ambient><diffuse>0.65 0.60 0.5 1</diffuse></material></visual>
+      </link></model><model name="wall_5"><static>true</static>
+      <pose>-1.2999999999999998 2.675 0.9 0 0 0</pose><link name="body">
+      <collision name="collision"><geometry><box><size>6.6 0.25 1.8</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>6.6 0.25 1.8</size></box></geometry>
+      <material><ambient>0.65 0.60 0.5 1</ambient><diffuse>0.65 0.60 0.5 1</diffuse></material></visual>
+      </link></model><model name="wall_6"><static>true</static>
+      <pose>1.4 -2.675 0.9 0 0 0</pose><link name="body">
+      <collision name="collision"><geometry><box><size>6.3999999999999995 0.25 1.8</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>6.3999999999999995 0.25 1.8</size></box></geometry>
+      <material><ambient>0.3 0.5 0.7 1</ambient><diffuse>0.3 0.5 0.7 1</diffuse></material></visual>
+      </link></model><model name="wall_7"><static>true</static>
+      <pose>-5.25 3.65 0.9 0 0 0</pose><link name="body">
+      <collision name="collision"><geometry><box><size>0.5 0.5 1.8</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>0.5 0.5 1.8</size></box></geometry>
+      <material><ambient>0.65 0.60 0.5 1</ambient><diffuse>0.65 0.60 0.5 1</diffuse></material></visual>
+      </link></model><model name="wall_8"><static>true</static>
+      <pose>5.25 -3.65 0.9 0 0 0</pose><link name="body">
+      <collision name="collision"><geometry><box><size>0.5 0.5 1.8</size></box></geometry></collision>
+      <visual name="visual"><geometry><box><size>0.5 0.5 1.8</size></box></geometry>
+      <material><ambient>0.65 0.60 0.5 1</ambient><diffuse>0.65 0.60 0.5 1</diffuse></material></visual>
+      </link></model><model name="panel_0_0"><static>true</static>
+              <pose>-7.5 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_0_1"><static>true</static>
+              <pose>-7.5 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_0_2"><static>true</static>
+              <pose>-7.5 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_1_0"><static>true</static>
+              <pose>-6.5625 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_1_1"><static>true</static>
+              <pose>-6.5625 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_1_2"><static>true</static>
+              <pose>-6.5625 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_2_0"><static>true</static>
+              <pose>-5.625 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_2_1"><static>true</static>
+              <pose>-5.625 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_2_2"><static>true</static>
+              <pose>-5.625 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_3_0"><static>true</static>
+              <pose>-4.6875 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_3_1"><static>true</static>
+              <pose>-4.6875 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_3_2"><static>true</static>
+              <pose>-4.6875 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_4_0"><static>true</static>
+              <pose>-3.75 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_4_1"><static>true</static>
+              <pose>-3.75 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_4_2"><static>true</static>
+              <pose>-3.75 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_5_0"><static>true</static>
+              <pose>-2.8125 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_5_1"><static>true</static>
+              <pose>-2.8125 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_5_2"><static>true</static>
+              <pose>-2.8125 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_6_0"><static>true</static>
+              <pose>-1.875 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_6_1"><static>true</static>
+              <pose>-1.875 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_6_2"><static>true</static>
+              <pose>-1.875 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_7_0"><static>true</static>
+              <pose>-0.9375 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_7_1"><static>true</static>
+              <pose>-0.9375 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_7_2"><static>true</static>
+              <pose>-0.9375 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_8_0"><static>true</static>
+              <pose>0.0 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_8_1"><static>true</static>
+              <pose>0.0 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_8_2"><static>true</static>
+              <pose>0.0 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_9_0"><static>true</static>
+              <pose>0.9375 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_9_1"><static>true</static>
+              <pose>0.9375 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_9_2"><static>true</static>
+              <pose>0.9375 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_10_0"><static>true</static>
+              <pose>1.875 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_10_1"><static>true</static>
+              <pose>1.875 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_10_2"><static>true</static>
+              <pose>1.875 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_11_0"><static>true</static>
+              <pose>2.8125 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_11_1"><static>true</static>
+              <pose>2.8125 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_11_2"><static>true</static>
+              <pose>2.8125 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_12_0"><static>true</static>
+              <pose>3.75 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_12_1"><static>true</static>
+              <pose>3.75 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_12_2"><static>true</static>
+              <pose>3.75 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_13_0"><static>true</static>
+              <pose>4.6875 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_13_1"><static>true</static>
+              <pose>4.6875 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_13_2"><static>true</static>
+              <pose>4.6875 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_14_0"><static>true</static>
+              <pose>5.625 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_14_1"><static>true</static>
+              <pose>5.625 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_14_2"><static>true</static>
+              <pose>5.625 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_15_0"><static>true</static>
+              <pose>6.5625 4.795 0.45 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model><model name="panel_15_1"><static>true</static>
+              <pose>6.5625 4.795 0.8 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.85 0.85 0.75 1</ambient><diffuse>0.85 0.85 0.75 1</diffuse></material></visual>
+              </link></model><model name="panel_15_2"><static>true</static>
+              <pose>6.5625 4.795 1.15 0 0 0</pose><link name="visual_only">
+              <visual name="panel"><geometry><box><size>.25 .01 .25</size></box></geometry>
+              <material><ambient>0.12 0.16 0.22 1</ambient><diffuse>0.12 0.16 0.22 1</diffuse></material></visual>
+              </link></model>
+      <plugin name="state" filename="libgazebo_ros_state.so"><update_rate>30</update_rate></plugin>
+    </world></sdf>

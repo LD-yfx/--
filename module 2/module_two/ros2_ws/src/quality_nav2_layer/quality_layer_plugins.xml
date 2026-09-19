@@ -1,0 +1,7 @@
+<library path="quality_nav2_layer">
+  <class name="quality_nav2_layer::QualityCostLayer"
+         type="quality_nav2_layer::QualityCostLayer"
+         base_class_type="nav2_costmap_2d::Layer">
+    <description>Bounded soft costs preserving Nav2 obstacle and unknown semantics.</description>
+  </class>
+</library>

@@ -1,0 +1,150 @@
+{
+  "format_version": 1,
+  "split": "complete_runs_only",
+  "seed": 20260727,
+  "learning_rate": 0.0003,
+  "quality_contract": {
+    "rule_baseline_features": [
+      "q_visual_raw",
+      "q_laser_raw"
+    ],
+    "learned_fusion_features": [
+      "q_visual",
+      "q_laser",
+      "p_corridor",
+      "p_hall",
+      "p_outdoor",
+      "illumination_quality",
+      "geometry_complexity",
+      "openness",
+      "visual_valid",
+      "laser_valid"
+    ]
+  },
+  "scene_model_selection": {
+    "selected_epoch": 329,
+    "trained_epochs": 350,
+    "validation_mae": 0.027710459552400413,
+    "early_stopped": false,
+    "restored_best_epoch": true
+  },
+  "results": {
+    "fixed_0_5": {
+      "localization_loss": 0.3858953731955318,
+      "improvement_over_rule": -0.17187139072516794
+    },
+    "quality_ratio_rule": {
+      "localization_loss": 0.32929839933777644,
+      "improvement_over_rule": 0.0
+    },
+    "sensor_quality_mlp": {
+      "feature_names": [
+        "q_visual",
+        "q_laser",
+        "visual_valid",
+        "laser_valid"
+      ],
+      "weight_mae": 0.06800088672528494,
+      "localization_loss": 0.17597340145984186,
+      "model_selection": {
+        "selected_epoch": 1,
+        "trained_epochs": 61,
+        "validation_mae": 0.10317879671949673,
+        "early_stopped": true,
+        "restored_best_epoch": true
+      },
+      "improvement_over_rule": 0.4656111240937497
+    },
+    "full_context_mlp": {
+      "feature_names": [
+        "q_visual",
+        "q_laser",
+        "p_corridor",
+        "p_hall",
+        "p_outdoor",
+        "illumination_quality",
+        "geometry_complexity",
+        "openness",
+        "visual_valid",
+        "laser_valid"
+      ],
+      "weight_mae": 0.08413677463858735,
+      "localization_loss": 0.1652058628358571,
+      "model_selection": {
+        "selected_epoch": 2,
+        "trained_epochs": 62,
+        "validation_mae": 0.1662941307584854,
+        "early_stopped": true,
+        "restored_best_epoch": true
+      },
+      "improvement_over_rule": 0.4983095479112916
+    },
+    "lighting_geometry_context": {
+      "feature_names": [
+        "q_visual",
+        "q_laser",
+        "illumination_quality",
+        "geometry_complexity",
+        "openness",
+        "visual_valid",
+        "laser_valid"
+      ],
+      "weight_mae": 0.07561503843529763,
+      "localization_loss": 0.1757596721032335,
+      "model_selection": {
+        "selected_epoch": 8,
+        "trained_epochs": 68,
+        "validation_mae": 0.16094207527148455,
+        "early_stopped": true,
+        "restored_best_epoch": true
+      },
+      "improvement_over_rule": 0.46626016872025916
+    },
+    "scene_geometry_context": {
+      "feature_names": [
+        "q_visual",
+        "q_laser",
+        "p_corridor",
+        "p_hall",
+        "p_outdoor",
+        "geometry_complexity",
+        "openness",
+        "visual_valid",
+        "laser_valid"
+      ],
+      "weight_mae": 0.06792497755074872,
+      "localization_loss": 0.1603433073971342,
+      "model_selection": {
+        "selected_epoch": 2,
+        "trained_epochs": 62,
+        "validation_mae": 0.07238628779132435,
+        "early_stopped": true,
+        "restored_best_epoch": true
+      },
+      "improvement_over_rule": 0.5130759587061863
+    },
+    "scene_lighting_context": {
+      "feature_names": [
+        "q_visual",
+        "q_laser",
+        "p_corridor",
+        "p_hall",
+        "p_outdoor",
+        "illumination_quality",
+        "openness",
+        "visual_valid",
+        "laser_valid"
+      ],
+      "weight_mae": 0.09501978375828572,
+      "localization_loss": 0.1753266087722052,
+      "model_selection": {
+        "selected_epoch": 4,
+        "trained_epochs": 64,
+        "validation_mae": 0.07694906710096705,
+        "early_stopped": true,
+        "restored_best_epoch": true
+      },
+      "improvement_over_rule": 0.4675752778489376
+    }
+  }
+}

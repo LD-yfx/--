@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "seed": 42,
+  "zones": [
+    {
+      "name": "measurement_degradation",
+      "bounds": [
+        -6.5,
+        6.5,
+        3.8,
+        4.7
+      ],
+      "laser_sigma": 0.08,
+      "dropout": 0.45,
+      "visual_blur": 0,
+      "exposure": 1.0
+    }
+  ],
+  "events": []
+}

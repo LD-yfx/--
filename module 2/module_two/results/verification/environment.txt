@@ -1,0 +1,20 @@
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+Linux 6.6.87.2-microsoft-standard-WSL2
+Python 3.10.12
+ros-humble-cv-bridge	3.2.1-1jammy.20260907.220118
+ros-humble-dwb-core	1.1.20-1jammy.20260908.005222
+ros-humble-nav2-costmap-2d	1.1.20-1jammy.20260908.002855
+ros-humble-nav2-navfn-planner	1.1.20-1jammy.20260908.005505
+ros-humble-navigation2	1.1.20-1jammy.20260908.015443
+ros-humble-rclcpp	16.0.19-1jammy.20260325.211007

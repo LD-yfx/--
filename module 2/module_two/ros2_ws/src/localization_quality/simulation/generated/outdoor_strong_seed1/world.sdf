@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="outdoor_strong_medium_1">
+    <physics name="default_physics" type="ode">
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+    <scene>
+      <ambient>0.55 0.55 0.55 1</ambient>
+      <background>0.08 0.09 0.12 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 20 0 0 0</pose>
+      <diffuse>1.0 1.0 1.0 1.0</diffuse>
+      <specular>1.0 1.0 1.0 1.0</specular>
+      <direction>-0.5 0.2 -1</direction>
+    </light>
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision"><geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry></collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.35 0.35 0.35 1</ambient><diffuse>0.55 0.55 0.55 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="building_north">
+      <static>true</static>
+      <pose>0.0000 18.0000 4.0000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>36 2 8</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>36 2 8</size></box></geometry>
+          <material><ambient>0.55 0.60 0.65 1</ambient><diffuse>0.55 0.60 0.65 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="building_west">
+      <static>true</static>
+      <pose>-18.0000 2.0000 3.0000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>2 24 6</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>2 24 6</size></box></geometry>
+          <material><ambient>0.60 0.45 0.35 1</ambient><diffuse>0.60 0.45 0.35 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="facade_east">
+      <static>true</static>
+      <pose>18.0000 -4.0000 3.5000 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>2 28 7</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>2 28 7</size></box></geometry>
+          <material><ambient>0.45 0.55 0.60 1</ambient><diffuse>0.45 0.55 0.60 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="outdoor_feature_0">
+      <static>true</static>
+      <pose>-3.0810 2.0455 1.1622 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.769034847439884 1.4518757017603758 2.4850286426252053</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.769034847439884 1.4518757017603758 2.4850286426252053</size></box></geometry>
+          <material><ambient>0.25 0.55 0.30 1</ambient><diffuse>0.25 0.55 0.30 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="outdoor_feature_1">
+      <static>true</static>
+      <pose>-7.5927 -5.5413 1.2893 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.5591068183972118 1.0983846255082672 2.2439498311748043</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.5591068183972118 1.0983846255082672 2.2439498311748043</size></box></geometry>
+          <material><ambient>0.25 0.55 0.30 1</ambient><diffuse>0.25 0.55 0.30 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="outdoor_feature_2">
+      <static>true</static>
+      <pose>2.4449 5.5049 1.2089 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.8797810502775545 0.9514658356730512 1.8507823412040394</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.8797810502775545 0.9514658356730512 1.8507823412040394</size></box></geometry>
+          <material><ambient>0.25 0.55 0.30 1</ambient><diffuse>0.25 0.55 0.30 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="outdoor_feature_3">
+      <static>true</static>
+      <pose>-11.7182 8.2110 0.8674 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.8951812067636344 0.6193068325595428 1.5345422967918125</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.8951812067636344 0.6193068325595428 1.5345422967918125</size></box></geometry>
+          <material><ambient>0.25 0.55 0.30 1</ambient><diffuse>0.25 0.55 0.30 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="outdoor_feature_4">
+      <static>true</static>
+      <pose>-7.6757 -8.2539 0.7125 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.8546882256305122 1.180903503009862 1.2677491247588155</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.8546882256305122 1.180903503009862 1.2677491247588155</size></box></geometry>
+          <material><ambient>0.25 0.55 0.30 1</ambient><diffuse>0.25 0.55 0.30 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

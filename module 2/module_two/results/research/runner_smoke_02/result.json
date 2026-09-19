@@ -1,0 +1,566 @@
+{
+  "run_id": "independent_closed_loop_smoke_02",
+  "map_id": "dev_asymmetric",
+  "seed": 0,
+  "condition": "normal",
+  "method": "geometric",
+  "schema_version": 1,
+  "data_status": "valid",
+  "evaluation_valid": true,
+  "navigation_success": true,
+  "success": true,
+  "failure_reasons": [],
+  "warnings": [],
+  "position_error": {
+    "n": 3300,
+    "rmse_m": 0.10564540320091417,
+    "median_m": 0.10665274786181941,
+    "p95_m": 0.13425732813301242,
+    "max_m": 0.18367284642834847
+  },
+  "yaw_error": {
+    "n": 3300,
+    "rmse_rad": 0.013888996587180126,
+    "median_rad": 0.0068776645998795405,
+    "p95_rad": 0.031169121666221333,
+    "max_rad": 0.05445712315520157,
+    "rmse_deg": 0.7957808861170254,
+    "median_deg": 0.3940611544796297,
+    "p95_deg": 1.7858591226042546,
+    "max_deg": 3.1201633212171993
+  },
+  "estimate_coverage": 1.0,
+  "raw_estimate_coverage": 1.0,
+  "truth_coverage": 1.0,
+  "estimate_missing_seconds": 0,
+  "estimate_missing_intervals": [],
+  "estimate_dropout_count": 0,
+  "estimate_dropout_seconds": 0,
+  "estimate_dropout_intervals": [],
+  "truth_path_length_m": 20.677707679403714,
+  "partial_truth_path_length_m": 20.677707679403714,
+  "truth_path_complete": true,
+  "goal_distance_m": 0.21678776421265195,
+  "goal_yaw_error_rad": null,
+  "wall_seconds": 67.82330862,
+  "mission_seconds": 66.0,
+  "collision_count": 0,
+  "action_succeeded": true,
+  "quality_status": "available",
+  "input_statistics": {
+    "estimates": {
+      "input_rows": 3550,
+      "outside_mission": 250,
+      "invalid_rows": 0,
+      "duplicate_timestamps": 0,
+      "time_reversals": 0,
+      "reset_events": 0
+    },
+    "truth": {
+      "input_rows": 3577,
+      "outside_mission": 277,
+      "invalid_rows": 0,
+      "duplicate_timestamps": 0,
+      "time_reversals": 0,
+      "reset_events": 0
+    }
+  },
+  "position_exceedance_fraction_observed": 0.0,
+  "pose_exceedance_fraction_observed": 0.0,
+  "position_exceedance_seconds_observed": 0.0,
+  "pose_exceedance_seconds_observed": 0.0,
+  "position_exceedance_fraction_observed_time": 0.0,
+  "pose_exceedance_fraction_observed_time": 0.0,
+  "alignment": {
+    "max_time_difference_s": 0.05,
+    "minimum_time_coverage": 0.95,
+    "method": "bounded linear/shortest-angle interpolation, otherwise nearest within tolerance",
+    "frame_transform": {
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0
+    }
+  },
+  "phase": "smoke",
+  "completed": true,
+  "exception": null,
+  "invalid_reasons": [],
+  "valid_evidence": true,
+  "pose_metrics_valid": true,
+  "legs": [
+    {
+      "run_id": "independent_closed_loop_smoke_02",
+      "map_id": "dev_asymmetric",
+      "seed": 0,
+      "condition": "normal",
+      "method": "geometric",
+      "schema_version": 1,
+      "data_status": "valid",
+      "evaluation_valid": true,
+      "navigation_success": true,
+      "success": true,
+      "failure_reasons": [],
+      "warnings": [],
+      "position_error": {
+        "n": 1549,
+        "rmse_m": 0.10172933898415805,
+        "median_m": 0.10408060339732385,
+        "p95_m": 0.12448138229256014,
+        "max_m": 0.18367284642834847
+      },
+      "yaw_error": {
+        "n": 1549,
+        "rmse_rad": 0.011176192676869373,
+        "median_rad": 0.006825791062860347,
+        "p95_rad": 0.02330986470397018,
+        "max_rad": 0.034355629827838484,
+        "rmse_deg": 0.6403486714096329,
+        "median_deg": 0.39108901974001425,
+        "p95_deg": 1.3355568685584553,
+        "max_deg": 1.9684325916489083
+      },
+      "estimate_coverage": 1.0,
+      "raw_estimate_coverage": 1.0,
+      "truth_coverage": 1.0,
+      "estimate_missing_seconds": 0,
+      "estimate_missing_intervals": [],
+      "estimate_dropout_count": 0,
+      "estimate_dropout_seconds": 0,
+      "estimate_dropout_intervals": [],
+      "truth_path_length_m": 10.305972099323895,
+      "partial_truth_path_length_m": 10.305972099323895,
+      "truth_path_complete": true,
+      "goal_distance_m": 0.0988027046082701,
+      "goal_yaw_error_rad": 0.15141905844090608,
+      "wall_seconds": 31.81088738599999,
+      "mission_seconds": 30.99,
+      "collision_count": 0,
+      "action_succeeded": true,
+      "quality_status": "available",
+      "input_statistics": {
+        "estimates": {
+          "input_rows": 3550,
+          "outside_mission": 2001,
+          "invalid_rows": 0,
+          "duplicate_timestamps": 0,
+          "time_reversals": 0,
+          "reset_events": 0
+        },
+        "truth": {
+          "input_rows": 3577,
+          "outside_mission": 2028,
+          "invalid_rows": 0,
+          "duplicate_timestamps": 0,
+          "time_reversals": 0,
+          "reset_events": 0
+        }
+      },
+      "position_exceedance_fraction_observed": 0.0,
+      "pose_exceedance_fraction_observed": 0.0,
+      "position_exceedance_seconds_observed": 0.0,
+      "pose_exceedance_seconds_observed": 0.0,
+      "position_exceedance_fraction_observed_time": 0.0,
+      "pose_exceedance_fraction_observed_time": 0.0,
+      "alignment": {
+        "max_time_difference_s": 0.05,
+        "minimum_time_coverage": 0.95,
+        "method": "bounded linear/shortest-angle interpolation, otherwise nearest within tolerance",
+        "frame_transform": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        }
+      }
+    },
+    {
+      "run_id": "independent_closed_loop_smoke_02",
+      "map_id": "dev_asymmetric",
+      "seed": 0,
+      "condition": "normal",
+      "method": "geometric",
+      "schema_version": 1,
+      "data_status": "valid",
+      "evaluation_valid": true,
+      "navigation_success": true,
+      "success": true,
+      "failure_reasons": [],
+      "warnings": [],
+      "position_error": {
+        "n": 1721,
+        "rmse_m": 0.1091302548729356,
+        "median_m": 0.11234832551262434,
+        "p95_m": 0.1348925304524341,
+        "max_m": 0.13829174735450073
+      },
+      "yaw_error": {
+        "n": 1721,
+        "rmse_rad": 0.015910588884266715,
+        "median_rad": 0.006782355487847891,
+        "p95_rad": 0.03808197176869754,
+        "max_rad": 0.05445712315520157,
+        "rmse_deg": 0.9116095926362442,
+        "median_deg": 0.3886003446110767,
+        "p95_deg": 2.18193625788272,
+        "max_deg": 3.1201633212171993
+      },
+      "estimate_coverage": 1.0,
+      "raw_estimate_coverage": 1.0,
+      "truth_coverage": 1.0,
+      "estimate_missing_seconds": 0,
+      "estimate_missing_intervals": [],
+      "estimate_dropout_count": 0,
+      "estimate_dropout_seconds": 0,
+      "estimate_dropout_intervals": [],
+      "truth_path_length_m": 10.371152850046926,
+      "partial_truth_path_length_m": 10.371152850046926,
+      "truth_path_complete": true,
+      "goal_distance_m": 0.2170702143056519,
+      "goal_yaw_error_rad": 0.16919452199986187,
+      "wall_seconds": 35.410783192999986,
+      "mission_seconds": 34.42000000000001,
+      "collision_count": 0,
+      "action_succeeded": true,
+      "quality_status": "available",
+      "input_statistics": {
+        "estimates": {
+          "input_rows": 3550,
+          "outside_mission": 1829,
+          "invalid_rows": 0,
+          "duplicate_timestamps": 0,
+          "time_reversals": 0,
+          "reset_events": 0
+        },
+        "truth": {
+          "input_rows": 3577,
+          "outside_mission": 1856,
+          "invalid_rows": 0,
+          "duplicate_timestamps": 0,
+          "time_reversals": 0,
+          "reset_events": 0
+        }
+      },
+      "position_exceedance_fraction_observed": 0.0,
+      "pose_exceedance_fraction_observed": 0.0,
+      "position_exceedance_seconds_observed": 0.0,
+      "pose_exceedance_seconds_observed": 0.0,
+      "position_exceedance_fraction_observed_time": 0.0,
+      "pose_exceedance_fraction_observed_time": 0.0,
+      "alignment": {
+        "max_time_difference_s": 0.05,
+        "minimum_time_coverage": 0.95,
+        "method": "bounded linear/shortest-angle interpolation, otherwise nearest within tolerance",
+        "frame_transform": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        }
+      }
+    }
+  ],
+  "leg_actions": [
+    {
+      "index": 0,
+      "goal": [
+        4.6,
+        0.0
+      ],
+      "goal_yaw": 0.0,
+      "mission_start": 3.7600000000000002,
+      "action_status": 4,
+      "timeout": false,
+      "termination": "action_finished",
+      "mission_end": 34.75,
+      "wall_seconds": 31.81088738599999,
+      "collision_count": 0
+    },
+    {
+      "index": 1,
+      "goal": [
+        -4.6,
+        0.0
+      ],
+      "goal_yaw": 0.0,
+      "mission_start": 35.04,
+      "action_status": 4,
+      "timeout": false,
+      "termination": "action_finished",
+      "mission_end": 69.46000000000001,
+      "wall_seconds": 35.410783192999986,
+      "collision_count": 0
+    }
+  ],
+  "bag_recorded": true,
+  "bag_returncode": 0,
+  "launch_returncode": 0,
+  "bridge_counter_delta": {
+    "truth_missing_passthrough": 0,
+    "queue_overflow_passthrough": 0,
+    "measurement_error_passthrough": 0,
+    "invalid_stamp_passthrough": 0,
+    "clock_rewinds": 0
+  },
+  "navigation_parameters": {
+    "quality_layer_enabled": false,
+    "plugins": [
+      "static_layer",
+      "obstacle_layer",
+      "inflation_layer",
+      "quality_layer"
+    ],
+    "robot_radius": 0.32
+  },
+  "execution_wall_seconds": 90.43779287199999,
+  "truth_motion_audit": {
+    "samples": 3300,
+    "collision_count": 0,
+    "contact_samples": 0,
+    "unstable_samples": 0
+  },
+  "bridge_diagnostic_envelope": {
+    "before": {
+      "t": 3.49,
+      "name": "benchmark/sensor_measurement_generation",
+      "level": 0,
+      "message": "normal_passthrough",
+      "values": {
+        "truth_dependency": "none",
+        "event_epoch": "0.0",
+        "events_started": "False",
+        "require_event_start": "False",
+        "events_clock_invalid": "False",
+        "sensor_frames_total": "85",
+        "pending_measurements": "0",
+        "images": "36",
+        "scans": "49",
+        "faulted_images": "0",
+        "faulted_scans": "0",
+        "truth_missing_passthrough": "0",
+        "queue_overflow_passthrough": "0",
+        "measurement_error_passthrough": "0",
+        "invalid_stamp_passthrough": "0",
+        "invalid_inputs": "0",
+        "clock_rewinds": "0"
+      },
+      "received_ros": 3.49
+    },
+    "after": {
+      "t": 71.63,
+      "name": "benchmark/sensor_measurement_generation",
+      "level": 0,
+      "message": "normal_passthrough",
+      "values": {
+        "truth_dependency": "none",
+        "event_epoch": "0.0",
+        "events_started": "False",
+        "require_event_start": "False",
+        "events_clock_invalid": "False",
+        "sensor_frames_total": "1894",
+        "pending_measurements": "0",
+        "images": "852",
+        "scans": "1042",
+        "faulted_images": "0",
+        "faulted_scans": "0",
+        "truth_missing_passthrough": "0",
+        "queue_overflow_passthrough": "0",
+        "measurement_error_passthrough": "0",
+        "invalid_stamp_passthrough": "0",
+        "invalid_inputs": "0",
+        "clock_rewinds": "0"
+      },
+      "received_ros": 71.64
+    },
+    "semantics": "conservative diagnostic envelope includes adjacent startup/drain time; faults invalidate, never omitted"
+  },
+  "message_counts": {
+    "scan": 1041,
+    "truth": 3577,
+    "encoder": 3577,
+    "image": 852,
+    "estimates": 3550,
+    "quality_stats": 129,
+    "plans": 122,
+    "commands": 1004
+  },
+  "frame_ids": {
+    "truth": [
+      "world"
+    ],
+    "encoder": [
+      "odom"
+    ],
+    "estimates": [
+      "map"
+    ]
+  },
+  "diagnostics_last": {
+    "benchmark/sensor_measurement_generation": {
+      "t": 71.63,
+      "name": "benchmark/sensor_measurement_generation",
+      "level": 0,
+      "message": "normal_passthrough",
+      "values": {
+        "truth_dependency": "none",
+        "event_epoch": "0.0",
+        "events_started": "False",
+        "require_event_start": "False",
+        "events_clock_invalid": "False",
+        "sensor_frames_total": "1894",
+        "pending_measurements": "0",
+        "images": "852",
+        "scans": "1042",
+        "faulted_images": "0",
+        "faulted_scans": "0",
+        "truth_missing_passthrough": "0",
+        "queue_overflow_passthrough": "0",
+        "measurement_error_passthrough": "0",
+        "invalid_stamp_passthrough": "0",
+        "invalid_inputs": "0",
+        "clock_rewinds": "0"
+      },
+      "received_ros": 71.64
+    },
+    "quality_navigation/cost_mapping": {
+      "t": 71.5,
+      "name": "quality_navigation/cost_mapping",
+      "level": 0,
+      "message": "windowed",
+      "values": {
+        "accepted": "128",
+        "rejected": "0",
+        "last_error": "",
+        "pending": "0",
+        "deferred": "85",
+        "deferred_accepted": "85",
+        "pending_replaced": "0",
+        "pending_expired": "0",
+        "pending_rewind_dropped": "0",
+        "model": "geometric",
+        "input_mode": "statistics",
+        "known_cells": "5",
+        "source_stamp": "71.134",
+        "semantics": "soft_cost_not_occupancy_or_failure_probability",
+        "runtime_module_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_aware_navigation/lib/python3.10/site-packages/quality_aware_navigation/ros_node.py",
+        "runtime_module_sha256": "9905d2c9f5793f5b473c01b7737adbcfdcb26d01df392e23742f30d6ec3db15f"
+      },
+      "received_ros": 71.5
+    },
+    "localization_quality/fusion": {
+      "t": 71.67,
+      "name": "localization_quality/fusion",
+      "level": 1,
+      "message": "rule_fallback:normal",
+      "values": {
+        "q_laser": "0.823355813",
+        "q_visual": "0.818807492",
+        "q_fused": "0.821087951",
+        "w_laser": "0.501384857",
+        "w_visual": "0.498615143",
+        "strategy": "rule_fallback",
+        "calibration_domain_guard": "false",
+        "fault_state": "normal",
+        "model_loaded": "false",
+        "image_message_type": "sensor_msgs/msg/Image",
+        "laser_message_type": "sensor_msgs/msg/LaserScan",
+        "qos_image": "best_effort/volatile/20",
+        "qos_laser": "best_effort/volatile/20",
+        "qos_odom": "best_effort/volatile/50",
+        "qos_localization": "reliable/volatile/50",
+        "odom_required": "true",
+        "scene": "corridor",
+        "p_corridor": "0.561143197",
+        "p_hall": "0.214194207",
+        "p_outdoor": "0.224662596",
+        "illumination_state": "normal",
+        "illumination_level": "0.473552237",
+        "illumination_quality": "0.999986979",
+        "geometry_complexity": "0.366651279",
+        "openness": "0.335266119",
+        "directional_anisotropy": "0.241448812",
+        "laser_valid_rate": "1",
+        "laser_coverage": "1",
+        "laser_occlusion": "0",
+        "laser_direction_entropy": "0.293626265",
+        "laser_condition_number": "1.3183026",
+        "visual_blur_variance": "132.263867",
+        "visual_brightness": "120.75582",
+        "visual_contrast": "47.1026494",
+        "visual_underexposed_ratio": "1.30208333e-05",
+        "visual_overexposed_ratio": "0",
+        "visual_edge_density": "0.0106901042",
+        "visual_features": "30",
+        "visual_match_rate": "1",
+        "visual_tracking_state": "unknown",
+        "sync_direction": "causal_past",
+        "image_delta_sec": "0.028",
+        "odom_delta_sec": "0.026",
+        "image_timeouts": "9",
+        "odom_timeouts": "21",
+        "image_received": "852",
+        "image_matched": "1033",
+        "image_queue_drops": "0",
+        "odom_received": "3547",
+        "odom_matched": "1021",
+        "odom_queue_drops": "0",
+        "outputs": "1042",
+        "processing_ms": "0.003544",
+        "end_to_end_latency_ms": "0",
+        "coordinate_frame": "map",
+        "tf_failures": "0",
+        "map_samples": "1021"
+      },
+      "received_ros": 71.68
+    },
+    "localization/independent_amcl_adapter": {
+      "t": 71.5,
+      "name": "localization/independent_amcl_adapter",
+      "level": 1,
+      "message": "amcl_covariance_stale",
+      "values": {
+        "source": "amcl_scan_matching_and_encoder_tf",
+        "ground_truth_consumed": "False",
+        "amcl_source_age_s": "2.27",
+        "amcl_receipt_age_s": "2.29278238400002",
+        "amcl_covariance_stale": "True",
+        "published_estimates": "3539",
+        "dropped_encoder_samples": "26",
+        "tf_failures": "10",
+        "pending_samples": "0",
+        "last_error": "amcl_covariance_stale",
+        "initial_prior_sent": "True",
+        "runtime_module_path": "/home/flx666/sitp_quality_research_01a0b893/ros2_ws/install/quality_localization_benchmark/lib/python3.10/site-packages/quality_localization_benchmark/localization_adapter.py",
+        "runtime_module_sha256": "20d93a931b525dab51ea7eca8a093d02b134a13e64aebe642610960d1da498f6",
+        "covariance_semantics": "last_AMCL_covariance_not_propagated_encoder_uncertainty"
+      },
+      "received_ros": 71.5
+    }
+  },
+  "collision_definition": "conservative circular footprint intersects exact SDF static rectangles",
+  "cost_consumption": {
+    "counter_envelope_delta": {
+      "accepted": 120,
+      "rejected": 0,
+      "deferred": 80,
+      "deferred_accepted": 80,
+      "pending_expired": 0,
+      "pending_rewind_dropped": 0
+    },
+    "state_seconds": {
+      "waiting_for_quality": 0.0,
+      "windowed": 66.00000000000001
+    },
+    "diagnostic_coverage": 1.0000000000000002,
+    "fallback_fraction": 0.0,
+    "missing_diagnostic_seconds": 0.0,
+    "counter_envelope": [
+      3.75,
+      70.0
+    ]
+  },
+  "sensor_fault_counter_delta": {
+    "scans": 993,
+    "images": 816,
+    "faulted_scans": 0,
+    "faulted_images": 0
+  },
+  "actual_module_one_mission_rows": 961
+}

@@ -1,0 +1,10 @@
+{
+  "quality_layer_enabled": false,
+  "plugins": [
+    "static_layer",
+    "obstacle_layer",
+    "inflation_layer",
+    "quality_layer"
+  ],
+  "robot_radius": 0.32
+}
